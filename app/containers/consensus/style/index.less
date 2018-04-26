@@ -1,0 +1,40 @@
+@import '../../../style/default.less';
+
+@consensus: consensus;
+
+.@{consensus} {
+    &-banner {
+        height: 444px;
+        padding-top: @header-height;
+        
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-title {
+            color: #ff2717;
+            font-size: 36px;
+        }
+
+        &-desc {
+            font-size: 16px;
+        }
+    }
+
+    &-main {
+        text-align: left;
+    }
+
+    &-banner-style1 {
+        background-image: url('../image/banner-bg1.png');
+    }
+
+    &-banner-style2 {
+        background-image: url('../image/banner-bg2.png');
+    }
+}

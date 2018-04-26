@@ -1,0 +1,74 @@
+@import '../../../style/default.less';
+
+@home-section5: home-section5;
+
+.@{home-section5} {
+    background-image: url('../image/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // min-height: 816px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &-countdown-desc {
+        padding-bottom: 20px;
+    }
+
+    .container {
+        padding: 100px 0 60px;
+    }
+
+    .img-responsive {
+        padding-top: 7px;
+    }
+
+    &-title {
+        font-size: 38px;
+        padding-bottom: 40px;
+    }
+
+    &-middle {
+        text-align: left;
+        padding: 0 30px;
+    }
+
+    &-name {
+        font-size: 26px;
+    }
+
+    &-infowrap {
+        margin: 20px 0 30px;
+        height: 2px;
+        width: 150px;
+        background-color: #ff2717;
+    }
+
+    &-info {
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+@media screen and (min-width: @md) {
+    .@{home-section5} {
+        &-countdown {
+            flex-direction: row;
+        }
+
+        &-countdown-desc {
+            padding-bottom: 0;
+        }
+    }
+}

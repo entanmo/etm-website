@@ -1,0 +1,54 @@
+.home-section5 {
+  background-image: url('../image/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-section5-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-section5-countdown-desc {
+  padding-bottom: 20px;
+}
+.home-section5 .container {
+  padding: 100px 0 60px;
+}
+.home-section5 .img-responsive {
+  padding-top: 7px;
+}
+.home-section5-title {
+  font-size: 38px;
+  padding-bottom: 40px;
+}
+.home-section5-middle {
+  text-align: left;
+  padding: 0 30px;
+}
+.home-section5-name {
+  font-size: 26px;
+}
+.home-section5-infowrap {
+  margin: 20px 0 30px;
+  height: 2px;
+  width: 150px;
+  background-color: #ff2717;
+}
+.home-section5-info {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 768px) {
+  .home-section5-countdown {
+    flex-direction: row;
+  }
+  .home-section5-countdown-desc {
+    padding-bottom: 0;
+  }
+}

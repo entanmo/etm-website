@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+body {
+  background-color: #081825;
+  color: #fff;
+  box-sizing: border-box;
+  user-select: none;
+  text-align: center;
+  overflow-x: hidden;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+a:visited,
+a:active {
+  color: #fff;
+}
+p {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  max-width: 1080px;
+  padding: 0 15px;
+}
+.tabpane-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.img-responsive {
+  max-width: 100%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-round {
+  justify-content: space-around;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-align-start {
+  align-items: flex-start;
+}
+.flex-align-end {
+  align-items: flex-end;
+}
+.flex-align-stretch {
+  align-items: stretch;
+}
+.position-default,
+.position-static {
+  position: static;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+p.large-title {
+  font-size: 44px;
+  color: #69c3cc;
+}
+p.normal-title {
+  font-size: 33px;
+  color: black;
+}
+p.small-title {
+  font-size: 22px;
+  color: black;
+}
+p.text-light {
+  font-size: 16px;
+  line-height: 35px;
+  color: #3e3a39;
+}
+p.text-dark {
+  font-size: 16px;
+  line-height: 35px;
+  color: black;
+}

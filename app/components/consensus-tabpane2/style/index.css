@@ -1,0 +1,25 @@
+.consensus-tabpane2 {
+  text-align: left;
+}
+.consensus-tabpane2-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.consensus-tabpane2-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+@media screen and (min-width: 576px) {
+  .consensus-tabpane2-info {
+    flex-direction: row;
+  }
+  .consensus-tabpane2-detail {
+    padding-left: 80px;
+    padding-top: 0;
+  }
+}

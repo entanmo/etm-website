@@ -1,0 +1,35 @@
+@import '../../../style/default.less';
+
+@ecosystem: ecosystem;
+
+.@{ecosystem} {
+    &-banner {
+        height: 444px;
+        padding-top: @header-height;
+
+        background-image: url('../image/banner.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-title {
+            color: #ff2717;
+            font-size: 44px;
+        }
+
+        &-desc {
+            font-size: 16px;
+            max-width: 450px;
+        }
+    }
+
+    &-main {
+        text-align: left;
+    }
+
+}

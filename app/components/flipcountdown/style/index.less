@@ -1,0 +1,95 @@
+@import '../../../style/default.less';
+
+@flipcountdown: flipcountdown;
+
+.@{flipcountdown} {
+    display: inline-block;
+
+    .digit {
+        float: left;
+        background-repeat: no-repeat;
+    }
+
+    .clearex {
+        clear: both;
+        float: none;
+    }
+
+    > .digit {
+        background-position: 0px 0px;
+    }
+
+    > .digit.separator,
+    > .digit.dot {
+        opacity: 0.9;
+    }
+
+    &.size_lg {
+        > .digit {
+            width: 53px;
+            height: 76px;
+            background-image: url('../image/digit-lg.png');
+        }
+
+        > .space,
+        > .separator,
+        > .dot {
+            width: 14px;
+            background-position: -19px -4620px;
+        }
+
+        > .dot {
+            background-position: -41px -4620px;
+        }
+
+        > .space {
+            background-position: -100px -4620px;
+        }
+    }
+
+    &.size_md {
+        > .digit {
+            width: 36px;
+            height: 51px;
+            background-image: url('../image/digit-md.png');
+        }
+
+        > .space,
+        > .separator,
+        > .dot {
+            width: 10px;
+            background-position: -13px -3120px;
+        }
+    }
+
+    &.size_sm {
+        > .digit {
+            width: 24px;
+            height: 34px;
+            background-image: url('../image/digit-sm.png');
+        }
+
+        > .space,
+        > .separator,
+        > .dot {
+            width: 10px;
+            background-position: -6px -2100px;
+        }
+    }
+
+    &.size_xs {
+        > .digit {
+            width: 16px;
+            height: 23px;
+            background-image: url('../image/digit-xs.png');
+        }
+
+        > .space,
+        > .separator,
+        > .dot {
+            width: 5px;
+            background-position: -5px -1440px;
+        }
+    }
+
+}

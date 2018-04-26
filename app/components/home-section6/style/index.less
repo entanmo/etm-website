@@ -1,0 +1,135 @@
+@import '../../../style/default.less';
+
+@home-section6: home-section6;
+
+.@{home-section6} {
+    background-image: url('../image/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // height: 737px;
+
+    &-align-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-title {
+        font-size: 38px;
+    }
+
+    &-desc {
+        font-size: 16px;
+        max-width: 440px;
+        padding: 20px 0 76px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    &-text-22 {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    &-text-16 {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    &-text-14 {
+        padding-top: 20px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    &-stage-lg {
+        padding-bottom: 0px;
+    }
+
+    &-infoshow-wrap {
+        width: 100%;
+        height: 200px;
+        // background-color: rgba(255, 255, 0, 0.4);
+    }
+
+    &-info {
+        // margin-top: 30px;
+        width: 100%;
+        background-color: rgba(8, 24, 37, 0.4);
+        border-radius: 10px;
+        padding: 30px 40px;
+
+        text-align: left;
+
+        p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    &-arrowup-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 20px;
+    }
+
+    &-arrowup {
+        width: 0; 
+        height: 0; 
+        border-left: 8px solid transparent; /* 左边框的宽 */ 
+        border-right: 8px solid transparent; /* 右边框的宽 */ 
+        border-bottom: 15px solid rgba(8, 24, 37, 0.5); /* 下边框的长度|高,以及背景色 */ 
+        font-size: 0; 
+        line-height: 0; 
+    }
+
+    &-stage-xs {
+        padding-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 100px;
+    }
+
+    &-world-xs {
+        display: block;
+    }
+
+    &-world-lg {
+        display: none;
+    }
+
+    &-main {
+        // padding-bottom: 120px;
+    }
+
+    &-lines {
+        position: absolute;
+        left: calc(100% - 8px);
+        top: 50px;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: @md) {
+    .@{home-section6} {
+        &-world-xs {
+            display: none;
+        }
+    
+        &-world-lg {
+            display: block;
+        }
+    }
+}

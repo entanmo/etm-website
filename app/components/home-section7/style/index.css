@@ -1,0 +1,19 @@
+.home-section7-title {
+  font-size: 38px;
+  padding-top: 100px;
+}
+.home-section7-desc {
+  font-size: 16px;
+  max-width: 433px;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.home-section7-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-section7-btn {
+  padding-bottom: 60px;
+}

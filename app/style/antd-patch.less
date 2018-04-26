@@ -1,0 +1,68 @@
+@import '~antd/dist/antd.less';
+@import './default.less';
+
+// antd patch
+// Menu
+@menu-bg: transparent;
+@menu-item-active-bg: transparent; 
+@menu-highlight-color: @etm-second-color;
+@patch-ant-menu: ant-menu;
+.@{patch-ant-menu} {
+    &-submenu {        
+        > .@{patch-ant-menu} {
+            background-color: rgba(0, 0, 0, 0.85);
+            border-radius: 0;
+        }
+    }
+}
+
+// Button
+@btn-default-bg: #1b1b1b;
+@btn-default-border: @etm-border-color;
+.ant-btn {
+    span {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+// Popover
+@popover-bg: red;
+
+// Tabs
+@tabs-card-head-background: transparent;
+@tabs-card-active-color: #ff2717;
+@tab-bar-margin: 0 0 0 0;
+@tab-highlight-color: blue;
+@tab-hover-color: #ff2717;
+@tab-active-color: #ff2717;
+@patch-ant-tabs: ant-tabs;
+.@{patch-ant-tabs} {
+    &&-card > &-bar &-tab-active {
+        background: transparent;
+        // border-color: @border-color-split;
+        // color: @tabs-card-active-color;
+        // padding-bottom: 1px;
+    }
+
+    &&-card > &-bar &-tab {
+        border: 0;
+        border-radius: 0;
+    }
+
+    &-bar {
+        border-bottom: 0;
+        background-color: black;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    &-nav-container {
+        width: 100%;
+        max-width: 1080px;
+    }
+}
+
+.@{patch-ant-menu}-submenu {
+    text-align: left;
+}

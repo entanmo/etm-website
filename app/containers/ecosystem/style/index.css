@@ -1,0 +1,23 @@
+.ecosystem-banner {
+  height: 444px;
+  padding-top: 60px;
+  background-image: url('../image/banner.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ecosystem-banner-title {
+  color: #ff2717;
+  font-size: 44px;
+}
+.ecosystem-banner-desc {
+  font-size: 16px;
+  max-width: 450px;
+}
+.ecosystem-main {
+  text-align: left;
+}

@@ -1,0 +1,44 @@
+@import '../../../style/default.less';
+
+@consensus-tabpane1: consensus-tabpane1;
+
+.@{consensus-tabpane1} {
+    text-align: left;
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    &-consensus {
+        max-width: 100%;
+    }
+
+    &-detail {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .@{consensus-tabpane1} {
+        &-info {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content:center;
+            padding-bottom: 140px;
+        }
+
+        &-consensus {
+            padding-top: 30px;
+        }
+    
+        &-detail {
+            padding-top: 0;
+        }
+    }
+}

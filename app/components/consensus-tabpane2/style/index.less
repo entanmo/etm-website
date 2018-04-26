@@ -1,0 +1,37 @@
+@import '../../../style/default.less';
+
+@consensus-tabpane2: consensus-tabpane2;
+
+.@{consensus-tabpane2} {
+    text-align: left;
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .@{consensus-tabpane2} {
+    
+        &-info {
+            flex-direction: row;
+        }
+    
+        &-detail {
+            padding-left: 80px;
+            padding-top: 0;
+        }
+    }
+}

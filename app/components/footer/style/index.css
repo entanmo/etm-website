@@ -1,0 +1,22 @@
+.footer {
+  min-height: 72px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.footer .content span {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .content a {
+  padding: 0 0 0 34px;
+}
+.footer img {
+  zoom: 0.5;
+  opacity: 0.5;
+}
+@media screen and (min-width: 576px) {
+  .footer .content span {
+    display: inline;
+  }
+}

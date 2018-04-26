@@ -1,0 +1,32 @@
+@import '../../../style/default.less';
+
+@home-section1: home-section1;
+
+.@{home-section1} {
+    background-image: url('../image/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 480px;
+    padding: 20px 0 0;
+
+    &-block {
+        padding: 0 0 20px;
+        &-title {
+            padding-top: 20px;
+            font-size: 22px;
+        }
+
+        &-desc {
+            font-size: 14px;
+            padding: 10px 0 30px;
+            max-width: 260px;
+            color: rgba(255, 255, 255, 0.7)
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import '../../../style/default.less';
+
+@home-section4: home-section4;
+
+.@{home-section4} {
+    background-image: url('../image/main-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // min-height: 677px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-title {
+        font-size: 38px;
+        padding-bottom: 40px;
+        padding-top: 100px;
+    }
+
+    &-graph {
+        display: none;
+        // height: 438px;
+        //padding: 15px 0;
+        //padding-bottom: 40px;
+        padding-bottom: 60px;
+    }
+
+    &-flex {
+        padding-bottom: 40px;
+        .desc {
+            padding: 0 15px;
+        }
+    }
+
+
+    &-block {
+        width: 176px;
+        height: 204px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-image: url('../image/background.png');
+        background-position: center;
+        background-repeat: no-repeat;
+
+        flex: 0 0 auto;
+        zoom: 0.8;
+    }
+
+    // Graph Layout
+    &-top,
+    &-left,
+    &-right {
+        display: inline-block;
+        position: relative;
+    }
+
+    &-top {
+        top: 0;
+        margin-left: 176px;
+    }
+
+    &-left {
+        top: 204px;
+        margin-left: -352px;
+    }
+
+    &-right {
+        top: 204px;
+        margin-left: 176px;
+    }
+    // end Graph Layout
+}
+
+@media screen and (min-width: 576px) {
+    .@{home-section4} {
+        &-graph {
+            display: block;
+        }
+
+        &-flex {
+            display: none;
+        }
+        
+        &-block {
+            zoom: 1.0;
+        }
+        
+    }
+}

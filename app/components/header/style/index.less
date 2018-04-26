@@ -1,0 +1,119 @@
+@import '../../../style/default.less';
+
+@header: header;
+.@{header} {
+    width: 100%;
+    min-height: @header-height;
+    
+    background-color: rgba(0, 0, 0, 0.85);
+
+    position: fixed;
+    z-index: @header-zindex;
+
+    > .container {
+        min-height: @header-height;
+        padding: 0 44px;
+    }
+
+    &-brand {
+        width: 46px;
+        height: 46px;
+
+        background-image: url('../image/logo-sm.png');
+    }
+
+    &-toggle {
+        > i {
+            height: @header-height;
+            line-height: @header-height;
+        }
+    }
+
+    &-collapse {
+        display: none;
+        min-height: 100vh;
+    }
+
+    &-collapseShow {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    // Patch antd Menu
+    @patch-ant-menu: ant-menu;
+    .@{patch-ant-menu} {
+        &-horizontal {
+            border-bottom: 0;
+            
+            > .@{patch-ant-menu}-item,
+            > .@{patch-ant-menu}-submenu {
+                border-bottom: 0;
+                
+                &:hover,
+                &-active,
+                &-open,
+                &-selected {
+                    border-bottom: 0;
+                }
+            }
+        }
+        
+        &-inline,
+        &-vertical,
+        &-vertical-left {
+            border-right: 0;
+        }
+        
+        &-vertical,
+        &-vertical-left,
+        &-vertical-right,
+        &-inline {
+            .@{patch-ant-menu}-item {
+                &:after {
+                    border-right: 0;
+                }
+            }
+        }
+        &-submenu {        
+            > .@{patch-ant-menu} {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: @md) {
+    .@{header} {
+        &-brand {
+            width: 223px;
+            height: 46px;
+            background-image: url('../image/logo.png');
+        }        
+    }
+}
+
+@media screen and (min-width: @lg) {
+    .@{header} {
+        > .container {
+            padding: 0 88px;
+        }
+
+        &-toggle {
+            display: none;
+        }
+
+        &-collapse {
+            display: block;
+            min-height: unset;
+        }
+    }
+}
+
+@media screen and (min-width: @normal) {
+    .@{header} {
+        > .container {
+            padding: 0 144px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.knownledge-banner {
+  height: 444px;
+  padding-top: 60px;
+  background-image: url('../image/banner.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.knownledge-main {
+  text-align: left;
+}
