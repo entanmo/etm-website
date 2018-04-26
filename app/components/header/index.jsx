@@ -4,7 +4,16 @@ import ConstDefines from '../../models/const-defines';
 
 import './style/index.less';
 import intl from 'react-intl-universal';
-
+const SUPPOER_LOCALES = [
+    {
+      name: "English",
+      value: "en-US"
+    },
+    {
+      name: "中文",
+      value: "zh-CN"
+    }
+  ];
 class Header extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -109,9 +118,26 @@ class Header extends React.Component {
                                 <Menu.Item>{intl.get('DOCUMENTS')}</Menu.Item>
                         </Menu>
                     </div>
+                    {this.renderLocaleSelector()}
                 </div>
             </div>
         );
+    }
+
+    renderLocaleSelector() {
+        return (
+          <select onChange={this.onSelectLocale} defaultValue={global.lang} className='langchange'>
+            {/* <option value="" disabled></option> */}
+            {SUPPOER_LOCALES.map(locale => (
+              <option key={locale.value} value={locale.value}>{locale.name}</option>
+            ))}
+          </select>
+        );
+    }
+    
+    onSelectLocale(e) {
+        let lang = e.target.value;
+        location.search = `?lang=${lang}`;
     }
 
     onMenuCollapse(collapse) {
