@@ -3,6 +3,7 @@ import React from 'react';
 import './style/index.less';
 
 import RawSHD from './image/SHD.png';
+import RawSHD_en from './image/SHD-en.png';
 import intl from 'react-intl-universal';
 
 class TabPane extends React.Component {
@@ -28,7 +29,7 @@ class TabPane extends React.Component {
                         {intl.get('SHD_COMPLETENESS_CON4')}</p>
                         <br />
                         <div style={styleImgContainer}>
-                            <img src={RawSHD} alt="" style={styleImg}/>
+                            <img src={global.lang=="zh-CN"?RawSHD:RawSHD_en} alt="" style={styleImg}/>
                         </div>
                     </div>
                 </div>

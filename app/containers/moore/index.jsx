@@ -7,6 +7,7 @@ import Footer from '../../components/footer';
 import './style/index.less';
 
 import RawPieChart from './image/piechart.png';
+import RawPieChart_en from './image/piechart-en.jpg';
 import intl from 'react-intl-universal';
 
 class Moore extends React.Component {
@@ -37,7 +38,7 @@ class Moore extends React.Component {
                     <div className='container' style={{backgroundColor: '#fff', padding: '80px 0 140px'}}>
                         <div className='content'>
                             <div style={styleImgContainer}>
-                                <img src={RawPieChart} alt="" style={styleImg}/>
+                                <img src={global.lang=="zh-CN"?RawPieChart:RawPieChart_en} alt="" style={styleImg}/>
                             </div>
                             <p className='normal-title'><br />{intl.get('ETM_PRIVATE_EQUITY')}</p>
                             <br />

@@ -4,6 +4,7 @@ import { Divider } from 'antd';
 import './style/index.less';
 
 import RawHistory from './image/history.png';
+import RawHistory_en from './image/history-en.png';
 import intl from 'react-intl-universal';
 
 class TabPane extends React.Component {
@@ -30,7 +31,7 @@ class TabPane extends React.Component {
                         {intl.get('HISTORY_CON3')}</p>
                         <br />
                         <div style={styleImgContainer}>
-                            <img src={RawHistory} alt="" style={styleImg}/>
+                            <img src={global.lang=="zh-CN"?RawHistory:RawHistory_en} alt="" style={styleImg}/>
                         </div>
                         <br />
                     </div>

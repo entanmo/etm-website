@@ -50,27 +50,27 @@ class App extends React.Component {
         let currentLocale = intl.determineLocale({
             urlLocaleKey: "lang",
             cookieLocaleKey: "lang"
-          });
-          if (!_.find(SUPPOER_LOCALES, { value: currentLocale })) {
+        });
+        if (!_.find(SUPPOER_LOCALES, { value: currentLocale })) {
             currentLocale = "en-US";
-            // currentLocale = "zh-CN";
-          }
-      
-          http
-            .get(`locales/${currentLocale}.json`)
-            .then(res => {
-              console.log("App locale data", res.data);
-              // init method will load CLDR locale data according to currentLocale
-              return intl.init({
-                currentLocale,
-                locales: {
-                  [currentLocale]: res.data
-                }
-              });
-            })
-            .then(() => {
-              // After loading CLDR locale data, start to render
-              this.setState({ initDone: true });
+        // currentLocale = "zh-CN";
+        }
+        global.lang=currentLocale;
+        http
+        .get(`locales/${currentLocale}.json`)
+        .then(res => {
+        //   console.log("App locale data", res.data);
+            // init method will load CLDR locale data according to currentLocale
+            return intl.init({
+            currentLocale,
+            locales: {
+                [currentLocale]: res.data
+            }
+            });
+        })
+        .then(() => {
+            // After loading CLDR locale data, start to render
+            this.setState({ initDone: true });
         });
     }
 

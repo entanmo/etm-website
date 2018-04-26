@@ -7,6 +7,7 @@ import RawTopLogo from './image/top-logo.png';
 import RawLeftLogo from './image/left-logo.png';
 import RawRightLogo from './image/right-logo.png';
 import RawInfo from './image/info.png';
+import RawInfo_en from './image/info-en.png';
 import intl from 'react-intl-universal';
 
 class Block extends React.Component {
@@ -102,7 +103,7 @@ class Section extends React.Component {
                                 <Left />
                                 <Right />
                                 */}
-                                <img className='img-responsive' src={RawInfo} alt=""/>
+                                <img className='img-responsive' src={global.lang=="zh-CN"?RawInfo:RawInfo_en} alt=""/>
                             </div>
                             <div className={`${clsName}-flex`}>
                                 <div className='flex nowrap' style={flexBlockStyle}>

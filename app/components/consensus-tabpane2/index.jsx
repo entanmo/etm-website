@@ -7,7 +7,9 @@ import RawNash from './image/nash.png';
 import RawKantorivich from './image/kantorivich.png';
 import RawStakhanov from './image/stakhanov.png';
 import RawSupervision from './image/supervision.png';
+import RawSupervision_en from './image/supervision-en.png';
 import RawParote from './image/parote.png';
+import RawParote_en from './image/parote-en.png';
 import intl from 'react-intl-universal';
 
 class TabPane extends React.Component {
@@ -52,16 +54,16 @@ class TabPane extends React.Component {
                 <div className='tabpane-container' style={{backgroundColor: '#fff', paddingBottom: '140px'}}>
                     <div className='content'>
                         <br />
-                        <p className='small-title' style={{
+                        {/* <p className='small-title' style={{
                             paddingTop: '40px',
                         }}>{intl.get('STAKHANOV')}</p>
                         <br />
                         <p className='text-dark'>{intl.get('STAKHANOV_CON')}</p>
-                        <br />
-                        <div style={styleImgContainer}>
+                        <br /> */}
+                        {/* <div style={styleImgContainer}>
                             <img src={RawStakhanov} alt="" style={styleImg}/>
                         </div>
-                        <Divider />
+                        <Divider /> */}
                         <br />
                         <p className='small-title' style={{
                             paddingTop: '40px'
@@ -70,7 +72,7 @@ class TabPane extends React.Component {
                         <p className='text-dark'>{intl.get('TRIBUNALS_CON')}</p>
                         <br />
                         <div style={styleImgContainer}>
-                            <img src={RawSupervision} alt="" style={styleImg}/>
+                            <img src={global.lang=="zh-CN"?RawSupervision:RawSupervision_en} alt="" style={styleImg}/>
                         </div>
                         <Divider />
                         <br />
@@ -81,7 +83,7 @@ class TabPane extends React.Component {
                         <p className='text-dark'>{intl.get('PARETO_MINING_POOL_CON')}</p>
                         <br />
                         <div style={styleImgContainer}>
-                            <img src={RawParote} alt="" style={styleImg}/>
+                            <img src={global.lang=="zh-CN"?RawParote:RawParote_en} alt="" style={styleImg}/>
                         </div>
                         <Divider />
                         <br />
