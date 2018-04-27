@@ -44,7 +44,7 @@ class TabPane extends React.Component {
                         <div className={`${clsName}-info`} style={{margin: '70px 0 80px'}}>
                             <img src={RawKantorivich} alt="" style={styleFixedImg}/>
                             <div className={`${clsName}-detail`}>
-                                <p className='small-title'>Kantorovich</p>
+                                <p className='small-title'>{intl.get('KANTOROVICH')}</p>
                                 <br />
                                 <p className='text-dark'>{intl.get('KANTOROVICH_CON')}</p>
                             </div>
