@@ -9,6 +9,8 @@ import TabPane2 from '../../components/consensus-tabpane2';
 import './style/index.less';
 import intl from 'react-intl-universal';
 
+const PREFIXED = 'consensus-';
+
 class Consensus extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -16,6 +18,8 @@ class Consensus extends React.Component {
         this.state = {
             activeTabKeyIndex: this._parsePropTabKey(this.props.params), 
         }
+
+        this.currentKey = PREFIXED + (Number.parseInt(this.state.activeTabKeyIndex) + 1);
     }
 
     componentWillMount() {
@@ -37,6 +41,7 @@ class Consensus extends React.Component {
         if (this.props.location.action == 'PUSH' || this.props.location.action == 'REPLACE') {
             let selectTabKey = this._parsePropTabKey(this.props.params);
             if (selectTabKey != this.state.activeTabKeyIndex) {
+                this.currentKey = PREFIXED + (Number.parseInt(selectTabKey) + 1);
                 this.setState({
                     activeTabKeyIndex: selectTabKey
                 })
@@ -81,7 +86,7 @@ class Consensus extends React.Component {
     render() {
         return (
             <div className={this.props.className}>
-                <Header history={this.props.history} />
+                <Header history={this.props.history}  currentKey={this.currentKey}/>
                 { /*this.getBanner() */}
                 <div className={`${this.props.className}-banner ${this.props.className}-banner-style1`}>
                     <p className={`${this.props.className}-banner-title`}>{intl.get('KANTOROVICH_CONSENSUS')}</p>

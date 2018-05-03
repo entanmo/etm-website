@@ -21,6 +21,14 @@ class Header extends React.Component {
         this.state = {
             mediaQuery: false,
             collapse: true,
+            reload:false
+        };
+
+        let selectedKey = this.props.currentKey;
+
+        this.selectedKeys = [];
+        if (selectedKey) {
+            this.selectedKeys = [selectedKey];
         }
     }
 
@@ -79,6 +87,7 @@ class Header extends React.Component {
             }
         }
 
+        console.log(`selectedKeys: ${this.selectedKeys}`);
         return (
             <div className={this.props.className}>
                 <div className='flex container'>
@@ -97,7 +106,9 @@ class Header extends React.Component {
                     <div className={`${this.props.className}-collapse ${collapseStyle}`}>
                         <Menu 
                             mode={menuMode}
-                            onClick={(...args) => { this.onMenuItemClick(...args) }} >
+                            onClick={(...args) => { this.onMenuItemClick(...args) }}
+                            onSelect={(...args) => { this.onMenuItemSelect(...args) }}
+                            selectedKeys={this.selectedKeys.length <=0 ? [] : this.selectedKeys} >
                                 <Menu.SubMenu title={intl.get('UNDERSTAND')}>
                                     <Menu.Item key='knownledge-1'>{intl.get('INTRODUCTION')}</Menu.Item>
                                     <Menu.Item key='knownledge-2'>{intl.get('SHD_COMPLETENESS')}</Menu.Item>
@@ -115,7 +126,7 @@ class Header extends React.Component {
                                     <Menu.Item key='ecosystem-5'>{intl.get('MILL_MALL')}</Menu.Item>
                                 </Menu.SubMenu>
                                 <Menu.Item key='moore'>{intl.get('MOORE_ECONOMICS')}</Menu.Item>
-                                <Menu.Item>{intl.get('DOCUMENTS')}</Menu.Item>
+                                <Menu.Item key='documents' >{intl.get('DOCUMENTS')}</Menu.Item>
                         </Menu>
                     </div>
                     {this.renderLocaleSelector()}
@@ -145,7 +156,19 @@ class Header extends React.Component {
             collapse: collapse,
         })
     }
+    onMenuItemSelect(event) {
+        console.log('event: ', event);
+        if("documents" === event.key){
+            let reload = this.state.reload;
+            this.setState({
+                reload: !reload
+            });
+            return ;
+        } 
 
+        this.selectedKeys = [event.key];
+        console.log('current: ', this.selectedKeys);
+    }
     onMenuItemClick(event) {
         switch (event.key) {
             case 'knownledge-1': {
@@ -200,6 +223,13 @@ class Header extends React.Component {
 
             case 'moore': {
                 this.props.history.pushState(null, 'moore');
+                break;
+            }
+
+            case 'documents': {
+                var pdfTemp = global.lang=="zh-CN"?"../../docs/ETM Science_zh.pdf":"../../docs/ETM Science_en.pdf"
+                window.open(pdfTemp);
+                document.getElementsByClassName("ant-menu-item").r
                 break;
             }
         }

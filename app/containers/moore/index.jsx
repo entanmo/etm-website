@@ -29,7 +29,7 @@ class Moore extends React.Component {
         
         return (
             <div className={this.props.className}>
-                <Header history={this.props.history}/>
+                <Header history={this.props.history} currentKey='moore'/>
                 <div className={`${this.props.className}-banner`}>
                     <p className={`${this.props.className}-banner-title`}>{intl.get('MOORE_ECONOMICS')}</p>
                     <p className={`${this.props.className}-banner-desc`}><br />{intl.get('MOORE_ECONOMICS_CON')}</p>

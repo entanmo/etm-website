@@ -10,6 +10,8 @@ import TabPane3 from '../../components/knownledge-tabpane3';
 import './style/index.less';
 import intl from 'react-intl-universal';
 
+const PREFIXED = 'knownledge-';
+
 class Knownledge extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -18,7 +20,10 @@ class Knownledge extends React.Component {
 
         this.state = {
             activeTabKeyIndex: this._parsePropTabKey(this.props.params), 
-        }
+        };
+
+        this.currentKey = PREFIXED + (Number.parseInt(this.state.activeTabKeyIndex) + 1);
+
     }
 
     componentWillMount() {
@@ -42,6 +47,7 @@ class Knownledge extends React.Component {
         if (this.props.location.action == 'PUSH' || this.props.location.action == 'REPLACE') {
             let selectTabKey = this._parsePropTabKey(this.props.params);
             if (selectTabKey != this.state.activeTabKeyIndex) {
+                this.currentKey = PREFIXED + (Number.parseInt(selectTabKey) + 1);
                 this.setState({
                     activeTabKeyIndex: selectTabKey
                 })
@@ -60,7 +66,7 @@ class Knownledge extends React.Component {
     render() {
         return (
             <div className={this.props.className}>
-                <Header history={this.props.history} />
+                <Header history={this.props.history} currentKey={this.currentKey}/>
                 <div className={`${this.props.className}-banner`}>
 
                 </div>
