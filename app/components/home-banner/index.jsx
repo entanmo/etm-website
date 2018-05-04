@@ -47,11 +47,16 @@ class Banner extends React.Component {
                     <div className='content flex-vertical'>
                         <img className='img-responsive' src={RawLogo} alt=""/>
                         <p className={`${clsName}-text1`}>{intl.get('VALUE_SHARE')}</p>
-                        <Button size='large'>{intl.get('DOWNLOAD')}</Button>
+                        <Button size='large' onClick={this.onClickBtn}>{intl.get('DOWNLOAD')}</Button>
                     </div>
                 </div>
             </div>
         )
+    }
+
+    onClickBtn() {
+        var pdfTemp = global.lang=="zh-CN"?"../../docs/ETM Science_zh.pdf":"../../docs/ETM Science_en.pdf"
+        window.open(pdfTemp);
     }
 }
 
