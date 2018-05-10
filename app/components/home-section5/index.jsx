@@ -63,7 +63,7 @@ class Section extends React.Component {
                                                     color: 'rgba(255, 255, 255, 0.6)'
                                                 }}>{intl.get('NEXT_BOARD')}</p>
                                             </div>
-                                            <FlipCountdown countdown={ new Date(2018, 6, 24) } />
+                                            <FlipCountdown countdown={ new Date(2018, 5, 24) } />
                                         </div>
                                     </Col>
                                 </Row>

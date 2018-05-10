@@ -41,7 +41,7 @@ class FlipCountdown extends React.Component {
                 } else {
                     start = start - 1;
                 }
-                this.animateRange(this.clockBoxs.hour[i], start, parseResult.hour[i]);
+                this.animateRange(this.clockBoxs.hour[i], 0, parseResult.hour[i]);
             }
             for (let i = 0; i < parseResult.minute.length; i++) {
                 let start = parseResult.minute[i];
@@ -52,7 +52,7 @@ class FlipCountdown extends React.Component {
                 } else {
                     start = start - 1;
                 }
-                this.animateRange(this.clockBoxs.minute[i], start, parseResult.minute[i]);
+                this.animateRange(this.clockBoxs.minute[i], 0, parseResult.minute[i]);
             }
             for (let i = 0; i < parseResult.second.length; i++) {
                 let start = parseResult.second[i];
@@ -63,7 +63,7 @@ class FlipCountdown extends React.Component {
                 } else {
                     start = start - 1;
                 }
-                this.animateRange(this.clockBoxs.second[i], start, parseResult.second[i]);
+                this.animateRange(this.clockBoxs.second[i], 0, parseResult.second[i]);
             }
         } else {
             for (let i = 0; i < parseResult.hour.length; i++) {
@@ -172,7 +172,7 @@ class FlipCountdown extends React.Component {
     }
 
     animateRange(box, a, b) {
-        this.animateOne(box, a, (a>b&&!(a==9&&b==0))?-1:1, !(a==0&&b==0)?Math.abs(a-b):1);
+        this.animateOne(box, a, (a>b&&!(a==9&&b==0))?-1:1, Math.abs(a-b));
     }
 
     animateOne(box, a, arrow, range) {
