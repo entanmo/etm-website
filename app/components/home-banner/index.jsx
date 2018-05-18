@@ -55,7 +55,7 @@ class Banner extends React.Component {
     }
 
     onClickBtn() {
-        var pdfTemp = global.lang=="zh-CN"?"../../docs/ETM Science_zh.pdf":"../../docs/ETM Science_en.pdf"
+        var pdfTemp = ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.lang);
         window.open(pdfTemp);
     }
 }

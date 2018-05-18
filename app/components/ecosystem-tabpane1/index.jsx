@@ -2,8 +2,8 @@ import React from 'react';
 
 import './style/index.less';
 
-import RawMainChain from './image/mainchain.png';
-import RawMainChain_en from './image/mainchain-en.png';
+// import RawMainChain from './image/mainchain.png';
+// import RawMainChain_en from './image/mainchain-en.png';
 import intl from 'react-intl-universal';
 
 class TabPane extends React.Component {
@@ -27,7 +27,7 @@ class TabPane extends React.Component {
                         {intl.get('CENTRA-DERIVED_CHAINS_CON2')}</p>
                         <br />
                         <div style={styleImgContainer}>
-                            <img src={global.lang=="zh-CN"?RawMainChain:RawMainChain_en} alt="" style={styleImg}/>
+                            <img src={((lang)=>{return require('./image/mainchain_'+lang+'.png')})(global.lang)} alt="" style={styleImg}/>
                         </div>
                     </div>
                 </div>

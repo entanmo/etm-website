@@ -6,13 +6,33 @@ import './style/index.less';
 import intl from 'react-intl-universal';
 const SUPPOER_LOCALES = [
     {
-      name: "English",
-      value: "en-US"
+        name: "English",
+        value: "en-GB"     //英语(英国) [en-GB]
     },
     {
-      name: "中文",
-      value: "zh-CN"
-    }
+        name: "简体中文",
+        value: "zh-CN"    //中文(简体) [zh-CN]
+    },
+    // {
+    //     name: "繁體中文",
+    //     value: "zh-TW"    //中文(繁体，台湾) [zh-TW]
+    // },
+    // {
+    //     name: "Français",
+    //     value: "fr-FR"    //法语(法国) [fr-FR]
+    // },
+    {
+        name: "日本の",
+        value: "ja-JP"    //日语(日本) [ja-JP]
+    },
+    {
+        name: "русский ",
+        value: "ru-RU"    //俄语(俄罗斯) [ru-RU]
+    },
+    // {
+    //     name: "한국어.",
+    //     value: "ko-KR"    //朝鲜语(韩国) [ko-KR]
+    // }
   ];
 class Header extends React.Component {
     constructor(props, context) {
@@ -91,7 +111,7 @@ class Header extends React.Component {
         return (
             <div className={this.props.className}>
                 <div className='flex container'>
-                    <a className={`${this.props.className}-brand`} href="/"></a>
+                    <a className={`${this.props.className}-brand`} href=""></a>
                     {
                         this.state.collapse ? 
                             <div className={`${this.props.className}-toggle`} 
@@ -137,7 +157,9 @@ class Header extends React.Component {
 
     renderLocaleSelector() {
         return (
-          <select onChange={this.onSelectLocale} defaultValue={global.lang} className='langchange'>
+          <select onChange={this.onSelectLocale} 
+          defaultValue={global.select} 
+          className='langchange'>
             {/* <option value="" disabled></option> */}
             {SUPPOER_LOCALES.map(locale => (
               <option key={locale.value} value={locale.value}>{locale.name}</option>
@@ -227,7 +249,7 @@ class Header extends React.Component {
             }
 
             case 'documents': {
-                var pdfTemp = global.lang=="zh-CN"?"../../docs/ETM Science_zh.pdf":"../../docs/ETM Science_en.pdf"
+                var pdfTemp =  ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.lang);
                 window.open(pdfTemp);
                 document.getElementsByClassName("ant-menu-item").r
                 break;

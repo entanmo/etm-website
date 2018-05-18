@@ -6,8 +6,8 @@ import './style/index.less';
 import RawTopLogo from './image/top-logo.png';
 import RawLeftLogo from './image/left-logo.png';
 import RawRightLogo from './image/right-logo.png';
-import RawInfo from './image/info.png';
-import RawInfo_en from './image/info-en.png';
+// import RawInfo from './image/info.png';
+// import RawInfo_en from './image/info-en.png';
 import intl from 'react-intl-universal';
 
 class Block extends React.Component {
@@ -90,7 +90,7 @@ class Section extends React.Component {
             fontSize: '16px',
             color: 'rgba(255, 255, 255, 0.8)'
         };
-
+        
         return (
             <div className={clsName}>
                 <div className='container'>
@@ -103,7 +103,8 @@ class Section extends React.Component {
                                 <Left />
                                 <Right />
                                 */}
-                                <img className='img-responsive' src={global.lang=="zh-CN"?RawInfo:RawInfo_en} alt=""/>
+                                {/* <img className='img-responsive' src={global.lang=="zh-CN"?RawInfo:RawInfo_en} alt=""/> */}
+                                <img className='img-responsive' src={((lang)=>{return require('./image/info_'+lang+'.png')})(global.lang)} alt=""/>
                             </div>
                             <div className={`${clsName}-flex`}>
                                 <div className='flex nowrap' style={flexBlockStyle}>

@@ -2,10 +2,10 @@ import React from 'react';
 
 import './style/index.less';
 
-import RawEnv from './image/env.png';
-import RawPay from './image/pay.png';
-import RawEnv_en from './image/env-en.png';
-import RawPay_en from './image/pay-en.png';
+// import RawEnv from './image/env.png';
+// import RawPay from './image/pay.png';
+// import RawEnv_en from './image/env-en.png';
+// import RawPay_en from './image/pay-en.png';
 import intl from 'react-intl-universal';
 
 class TabPane extends React.Component {
@@ -35,7 +35,7 @@ class TabPane extends React.Component {
                         </p>
                         <br />
                         <div style={styleImgContainer1}>
-                            <img src={global.lang=="zh-CN"?RawEnv:RawEnv_en} alt="" style={styleImg}/>
+                            <img src={((lang)=>{return require('./image/env_'+lang+'.png')})(global.lang)} alt="" style={styleImg}/>
                         </div>
                         <br />
                         <p className='text-light'>
@@ -44,7 +44,7 @@ class TabPane extends React.Component {
                         {intl.get('EQUILIBRIUM_CON4')}</p>
                         <br />
                         <div style={styleImgContainer2}>
-                            <img src={global.lang=="zh-CN"?RawPay:RawPay_en} alt="" style={styleImg}/>
+                            <img src={((lang)=>{return require('./image/pay_'+lang+'.png')})(global.lang)} alt="" style={styleImg}/>
                         </div>
                         <br />
                     </div>

@@ -5,11 +5,11 @@ import './style/index.less';
 
 import RawNash from './image/nash.png';
 import RawKantorivich from './image/kantorivich.png';
-import RawStakhanov from './image/stakhanov.png';
-import RawSupervision from './image/supervision.png';
-import RawSupervision_en from './image/supervision-en.png';
-import RawParote from './image/parote.png';
-import RawParote_en from './image/parote-en.png';
+// import RawStakhanov from './image/stakhanov.png';
+// import RawSupervision from './image/supervision.png';
+// import RawSupervision_en from './image/supervision-en.png';
+// import RawParote from './image/parote.png';
+// import RawParote_en from './image/parote-en.png';
 import intl from 'react-intl-universal';
 
 class TabPane extends React.Component {
@@ -72,7 +72,7 @@ class TabPane extends React.Component {
                         <p className='text-dark'>{intl.get('TRIBUNALS_CON')}</p>
                         <br />
                         <div style={styleImgContainer}>
-                            <img src={global.lang=="zh-CN"?RawSupervision:RawSupervision_en} alt="" style={styleImg}/>
+                            <img src={((lang)=>{return require('./image/supervision_'+lang+'.png')})(global.lang)} alt="" style={styleImg}/>
                         </div>
                         <Divider />
                         <br />
@@ -83,7 +83,7 @@ class TabPane extends React.Component {
                         <p className='text-dark'>{intl.get('PARETO_MINING_POOL_CON')}</p>
                         <br />
                         <div style={styleImgContainer}>
-                            <img src={global.lang=="zh-CN"?RawParote:RawParote_en} alt="" style={styleImg}/>
+                            <img src={((lang)=>{return require('./image/parote_'+lang+'.png')})(global.lang)} alt="" style={styleImg}/>
                         </div>
                         <Divider />
                         <br />

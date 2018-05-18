@@ -2,8 +2,8 @@ import React from 'react';
 
 import './style/index.less';
 
-import RawParallelChain from './image/parallelchain.png';
-import RawParallelChain_en from './image/parallelchain-en.png';
+// import RawParallelChain from './image/parallelchain.png';
+// import RawParallelChain_en from './image/parallelchain-en.png';
 import intl from 'react-intl-universal';
 
 class TabPane extends React.Component {
@@ -26,7 +26,7 @@ class TabPane extends React.Component {
                         <p className='text-light'>{intl.get('PARALLEL_CHAIN_CON1')}</p>
                         <br />
                         <div style={styleImgContainer}>
-                            <img src={global.lang=="zh-CN"?RawParallelChain:RawParallelChain_en} alt="" style={styleImg}/>
+                            <img src={((lang)=>{return require('./image/parallelchain_'+lang+'.png')})(global.lang)} alt="" style={styleImg}/>
                         </div>
                     </div>
                 </div>
