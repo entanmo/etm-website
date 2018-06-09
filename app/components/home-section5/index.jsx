@@ -57,7 +57,7 @@ class Section extends React.Component {
                                                     color: 'rgba(255, 255, 255, 0.6)',
                                                 }}/>
                                                 <p style={{
-                                                    fontSize: '26px',
+                                                    fontSize: '22px',
                                                     paddingRight: '60px',
                                                     paddingLeft: '20px',
                                                     color: 'rgba(255, 255, 255, 0.6)'

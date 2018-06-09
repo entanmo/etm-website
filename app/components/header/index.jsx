@@ -13,14 +13,14 @@ const SUPPOER_LOCALES = [
         name: "简体中文",
         value: "zh-CN"    //中文(简体) [zh-CN]
     },
-    // {
-    //     name: "繁體中文",
-    //     value: "zh-TW"    //中文(繁体，台湾) [zh-TW]
-    // },
-    // {
-    //     name: "Français",
-    //     value: "fr-FR"    //法语(法国) [fr-FR]
-    // },
+    {
+        name: "繁體中文",
+        value: "zh-TW"    //中文(繁体，台湾) [zh-TW]
+    },
+    {
+        name: "Français",
+        value: "fr-FR"    //法语(法国) [fr-FR]
+    },
     {
         name: "日本の",
         value: "ja-JP"    //日语(日本) [ja-JP]
@@ -29,10 +29,10 @@ const SUPPOER_LOCALES = [
         name: "русский ",
         value: "ru-RU"    //俄语(俄罗斯) [ru-RU]
     },
-    // {
-    //     name: "한국어.",
-    //     value: "ko-KR"    //朝鲜语(韩国) [ko-KR]
-    // }
+    {
+        name: "한국어.",
+        value: "ko-KR"    //朝鲜语(韩国) [ko-KR]
+    }
   ];
 class Header extends React.Component {
     constructor(props, context) {
@@ -147,31 +147,50 @@ class Header extends React.Component {
                                 </Menu.SubMenu>
                                 <Menu.Item key='moore'>{intl.get('MOORE_ECONOMICS')}</Menu.Item>
                                 <Menu.Item key='documents' >{intl.get('DOCUMENTS')}</Menu.Item>
+                                <Menu.SubMenu className='lang-select' title={this.getViewLang()}>
+                                    <Menu.Item key='lang-1'>{SUPPOER_LOCALES[0].name}</Menu.Item>
+                                    <Menu.Item key='lang-2'>{SUPPOER_LOCALES[1].name}</Menu.Item>
+                                    <Menu.Item key='lang-3'>{SUPPOER_LOCALES[2].name}</Menu.Item>
+                                    {/* <Menu.Item key='lang-4'>{SUPPOER_LOCALES[3].name}</Menu.Item> */}
+                                    <Menu.Item key='lang-5'>{SUPPOER_LOCALES[4].name}</Menu.Item>
+                                    <Menu.Item key='lang-6'>{SUPPOER_LOCALES[5].name}</Menu.Item>
+                                    {/* <Menu.Item key='lang-7'>{SUPPOER_LOCALES[6].name}</Menu.Item> */}
+                                </Menu.SubMenu>
                         </Menu>
                     </div>
-                    {this.renderLocaleSelector()}
+                    {/* {this.renderLocaleSelector()} */}
                 </div>
             </div>
         );
     }
+    getViewLang (){
+        let n=0;
+        for(let i=0;i<SUPPOER_LOCALES.length;i++){
+            if(SUPPOER_LOCALES[i].value === global.select){
+                n=i;
+                break;
+            }
+        }
+        return SUPPOER_LOCALES[n].name;
+    }
 
-    renderLocaleSelector() {
-        return (
-          <select onChange={this.onSelectLocale} 
-          defaultValue={global.select} 
-          className='langchange'>
-            {/* <option value="" disabled></option> */}
-            {SUPPOER_LOCALES.map(locale => (
-              <option key={locale.value} value={locale.value}>{locale.name}</option>
-            ))}
-          </select>
-        );
-    }
+    // renderLocaleSelector() {
+    //     return (
+    //       <select onChange={this.onSelectLocale} 
+    //       defaultValue={global.select} 
+    //       className='langchange'>
+    //         {/* <option value="" disabled></option> */}
+    //         {SUPPOER_LOCALES.map(locale => (
+    //           <option key={locale.value} value={locale.value}>{locale.name}</option>
+    //         ))}
+    //       </select>
+    //     );
+    // }
     
-    onSelectLocale(e) {
-        let lang = e.target.value;
-        location.search = `?lang=${lang}`;
-    }
+    // onSelectLocale(e) {
+    //     let lang = e.target.value;
+    //     location.search = `?lang=${lang}`;
+    // }
 
     onMenuCollapse(collapse) {
         this.setState({
@@ -252,6 +271,42 @@ class Header extends React.Component {
                 var pdfTemp =  ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.lang);
                 window.open(pdfTemp);
                 document.getElementsByClassName("ant-menu-item").r
+                break;
+            }
+
+            case 'lang-1': {
+                let lang = SUPPOER_LOCALES[0].value;
+                location.search = `?lang=${lang}`;
+                break;
+            }
+            case 'lang-2': {
+                let lang = SUPPOER_LOCALES[1].value;
+                location.search = `?lang=${lang}`;
+                break;
+            }
+            case 'lang-3': {
+                let lang = SUPPOER_LOCALES[2].value;
+                location.search = `?lang=${lang}`;
+                break;
+            }
+            case 'lang-4': {
+                let lang = SUPPOER_LOCALES[3].value;
+                location.search = `?lang=${lang}`;
+                break;
+            }
+            case 'lang-5': {
+                let lang = SUPPOER_LOCALES[4].value;
+                location.search = `?lang=${lang}`;
+                break;
+            }
+            case 'lang-6': {
+                let lang = SUPPOER_LOCALES[5].value;
+                location.search = `?lang=${lang}`;
+                break;
+            }
+            case 'lang-7': {
+                let lang = SUPPOER_LOCALES[6].value;
+                location.search = `?lang=${lang}`;
                 break;
             }
         }

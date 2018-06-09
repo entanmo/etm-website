@@ -50,7 +50,7 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.onSelectLocale = this.onSelectLocale.bind(this);
+        // this.onSelectLocale = this.onSelectLocale.bind(this);
     }
 
     componentDidMount() {
@@ -71,6 +71,7 @@ class App extends React.Component {
             urlLocaleKey: "lang",
             cookieLocaleKey: "lang"
         });
+        // let currentLocale = "en-GB";
         if (!_.find(SUPPOER_LOCALES, { value: currentLocale })) {
             currentLocale = "en-GB";
             // currentLocale = "zh-CN";
@@ -97,21 +98,21 @@ class App extends React.Component {
             });
     }
 
-    renderLocaleSelector() {
-        return (
-            <select onChange={this.onSelectLocale} defaultValue="">
-                <option value="" disabled>Change Language</option>
-                {SUPPOER_LOCALES.map(locale => (
-                    <option key={locale.value} value={locale.value}>{locale.name}</option>
-                ))}
-            </select>
-        );
-    }
+    // renderLocaleSelector() {
+    //     return (
+    //         <select onChange={this.onSelectLocale} defaultValue="">
+    //             <option value="" disabled>Change Language</option>
+    //             {SUPPOER_LOCALES.map(locale => (
+    //                 <option key={locale.value} value={locale.value}>{locale.name}</option>
+    //             ))}
+    //         </select>
+    //     );
+    // }
 
-    onSelectLocale(e) {
-        let lang = e.target.value;
-        location.search = `?lang=${lang}`;
-    }
+    // onSelectLocale(e) {
+    //     let lang = e.target.value;
+    //     location.search = `?lang=${lang}`;
+    // }
 
 
 }
