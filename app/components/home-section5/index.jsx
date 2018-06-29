@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Icon } from 'antd';
+import { Row, Col, Icon ,Tabs} from 'antd';
 
 import FlipCountdown from '../../components/flipcountdown';
 
@@ -8,9 +8,25 @@ import './style/index.less';
 import RawVideoBackground from './image/video.png';
 import intl from 'react-intl-universal';
 
+const TabPane = Tabs.TabPane;
+
 class Section extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.state = {
+            tabId: 1
+        }
+    }
+    
+    onClickTab(key) {
+        // console.log(key);
+        this.setState({ tabId: key });
+    }
+
     render() {
         const clsName = this.props.className + '-section5';
+        var videopath = '../../video/' + this.state.tabId + '.mp4';
         return (
             <div className={clsName}>
                 <div className='container'>
@@ -22,20 +38,32 @@ class Section extends React.Component {
                             <Col span={24} >
                                 <Row gutter={24} >
                                     <Col xs={24} sm={12} md={12}>
-                                        <img className='img-responsive' src={RawVideoBackground} alt=""/>
+                                        {/* <img className='img-responsive' src={RawVideoBackground} alt=""/> */}
+                                        <video className='video-box' src={videopath} controls="controls"></video>
                                     </Col>
+                                    
                                     <Col xs={24} sm={12} md={12}>
-                                        <div className={`${clsName}-middle`}>
-                                            <p className={`${clsName}-name`}>{intl.get('THOMASJ.SARGENT')} </p>
-                                            {/* <p style={{
-                                                fontSize: '16px'
-                                            }}>THOMAS J. SARGENT</p> */}
-                                            <div className={`${clsName}-infowrap`}></div>
-                                            <p className={`${clsName}-info`}>{intl.get('THOMASJ.SARGENT_CON1')}<br />    
-                                            {intl.get('THOMASJ.SARGENT_CON2')}</p>
-                                        </div>
+                                        <Tabs defaultActiveKey="1" onChange={this.onClickTab.bind(this)}>
+                                            <TabPane className={`${clsName}-name`} tab={intl.get('THOMAS')} key="1">
+                                            <div className={`${clsName}-middle`}>
+                                                <p className={`${clsName}-info`}>
+                                                {intl.get('THOMAS_CON1')}<br />
+                                                {intl.get('THOMAS_CON2')}<br />
+                                                {intl.get('THOMAS_CON3')}<br />    
+                                                {intl.get('THOMAS_CON4')}</p>
+                                            </div>
+                                            </TabPane>
+                                            <TabPane className={`${clsName}-name`} tab={intl.get('SHELDON')} key="2">
+                                            <div className={`${clsName}-middle`}>
+                                                <p className={`${clsName}-info`}>
+                                                {intl.get('SHELDON_CON1')}<br />
+                                                {intl.get('SHELDON_CON2')}<br />    
+                                                {intl.get('SHELDON_CON3')}</p>
+                                            </div>
+                                            </TabPane>
+                                        </Tabs>
                                     </Col>
-                                    <Col xs={24} sm={24} md={24}>
+                                    {/* <Col xs={24} sm={24} md={24}>
                                         <div style={{
                                             width: '100%',
 
@@ -65,7 +93,7 @@ class Section extends React.Component {
                                             </div>
                                             <FlipCountdown countdown={ new Date(2018, 5, 24) } />
                                         </div>
-                                    </Col>
+                                    </Col> */}
                                 </Row>
                             </Col>
                             
@@ -75,6 +103,7 @@ class Section extends React.Component {
             </div>
         );
     }
+
 }
 
 Section.defaultProps = {

@@ -42,6 +42,9 @@ class TabPane extends React.Component {
                         <p className='normal-title'>{intl.get('WHAT_IS_ETM')}</p>
                         <br />
                         <p className='text-light'>{intl.get('WHAT_IS_ETM_CON')}</p>
+                        <div className='video-container'>
+                            <video className='video-box' src="../../video/0.mp4" controls="controls"></video>
+                        </div>
                         <br /><br />
                         <Divider />
                         <p className='normal-title'>{intl.get('ETM_BUILDERS')}</p>

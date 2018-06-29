@@ -268,7 +268,7 @@ class Header extends React.Component {
             }
 
             case 'documents': {
-                var pdfTemp =  ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.lang);
+                var pdfTemp =  ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.select);
                 window.open(pdfTemp);
                 document.getElementsByClassName("ant-menu-item").r
                 break;

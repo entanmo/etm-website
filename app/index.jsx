@@ -51,6 +51,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         // this.onSelectLocale = this.onSelectLocale.bind(this);
+        document.cookie="lang=en-US";
     }
 
     componentDidMount() {
@@ -71,10 +72,8 @@ class App extends React.Component {
             urlLocaleKey: "lang",
             cookieLocaleKey: "lang"
         });
-        // let currentLocale = "en-GB";
         if (!_.find(SUPPOER_LOCALES, { value: currentLocale })) {
             currentLocale = "en-GB";
-            // currentLocale = "zh-CN";
         }
         
         global.select = currentLocale;
@@ -83,8 +82,6 @@ class App extends React.Component {
         http
             .get(`locales/${currentLocale}.json`)
             .then(res => {
-                //   console.log("App locale data", res.data);
-                // init method will load CLDR locale data according to currentLocale
                 return intl.init({
                     currentLocale,
                     locales: {
@@ -93,28 +90,9 @@ class App extends React.Component {
                 });
             })
             .then(() => {
-                // After loading CLDR locale data, start to render
                 this.setState({ initDone: true });
             });
     }
-
-    // renderLocaleSelector() {
-    //     return (
-    //         <select onChange={this.onSelectLocale} defaultValue="">
-    //             <option value="" disabled>Change Language</option>
-    //             {SUPPOER_LOCALES.map(locale => (
-    //                 <option key={locale.value} value={locale.value}>{locale.name}</option>
-    //             ))}
-    //         </select>
-    //     );
-    // }
-
-    // onSelectLocale(e) {
-    //     let lang = e.target.value;
-    //     location.search = `?lang=${lang}`;
-    // }
-
-
 }
 
 class RouteMap extends React.Component {

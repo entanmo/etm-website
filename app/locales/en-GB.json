@@ -26,9 +26,16 @@
     "TECHNOLOGY_DEVELOPMENT_CORPORATION_CON": "The role of Emgo is to conduct research on blockchain technology, to develop and maintain ETM consensus and contracts.",
     
     "ADVISORY_BOARD": "ETM advisory board",
-    "THOMASJ.SARGENT": "Thomas J. Sargent",
-    "THOMASJ.SARGENT_CON1": "Thomas Sargent is an American economist, currently the W.R. Berkley professor of Economics and Business at New York University and a senior fellow of Hoover institute in Stanford University. He is a member of the National Academy of Sciences and also the American Academy of Arts and Sciences. He was awarded the Nobel Prize in Economics in 2011. Sargent is the leader in the “rational expectation revolution” and made fundamental contributions to the development of new classical macroeconomics.",
-    "THOMASJ.SARGENT_CON2": "As a senior advisor to En-Tan-Mo foundation, Professor Sargent is providing important guidance and advices for the construction of En-Tan-Mo. En-Tan-Mo consensus mechanism and equilibrium economic structural design are based on game theory and theory of distributed systems. Sargent’s theory of rational expectations and Dynamic Macroeconomic theory were used in the design of En-Tan-Mo systems.",
+    "THOMAS": "Thomas J. Sargent",
+    "THOMAS_CON1": "Professor Thomas Sargent (THOMAS J. SARGENT), a senior fellow at the Hoover Institute of Stanford University, and the winner of the 2011 Nobel economics prize, the leader of the rational expectation school, made outstanding contributions to the establishment and development of the neo classical macroeconomics system.",
+    "THOMAS_CON2": "Professor Sargent, as a senior adviser to the En-Tan-Mo foundation, provides basic guidance and suggestions for the construction of En-Tan-Mo economics.",
+    "THOMAS_CON3": "The En-Tan-Mo consensus mechanism and the balanced economic framework are built on the basis of game theory and distributed system, and the macro economic expectation model proposed by Professor Sargent and the dynamic economic theory based on time series analysis are deeply applied.",
+    "THOMAS_CON4": "Professor Sargent believes that 'the ETM project has fully understood the most advanced block chain technology and has already excavated their shortcomings, and on this basis, ETM is pushing forward the cutting edge of block chain technology', 'the technology of ETM is at the forefront.'",
+    "SHELDON":"Sheldon Lee Glashaw",
+    "SHELDON_CON1":"Professor Sheldon Gracia (Sheldon Lee Glashaw), a world famous theoretical physicist, and the academician of the American Academy of Sciences (the 'Sheffield' archetype in the big bang), the winner of the 1979 Nobel prize in physics. Senior adviser to the En-Tan-Mo foundation.",
+    "SHELDON_CON2":"Professor Gracia devoted his life to the research of basic particles and quantum field theory. It is one of the founders of the standard model of particle physics and the founder of the theory of unification. He successfully predicted the existence of neutral flow, charm quark and charm particles, and enjoyed a great reputation in the field of physics in the world.",
+    "SHELDON_CON3":"Prof Gracia pointed out that the block chain revolution, which started ten years ago, has created a number of encrypted currencies, and En-Tan-Mo seeks to solve these challenges under the leadership of an outstanding team of scientists. Using block chain technology, En-Tan-Mo can implement and deliver the point to point security of financial tools and information, thus providing the Internet. The two missing elements, namely, absolute privacy and permanent records, will have a significant impact on society.",
+    
     "NEXT_BOARD": " More about advisory board",
     
     "GLOBAL_PLAN": "En-Tan-Mo global plan",
