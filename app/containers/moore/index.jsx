@@ -38,7 +38,7 @@ class Moore extends React.Component {
                     <div className='container' style={{backgroundColor: '#fff', padding: '80px 0 140px'}}>
                         <div className='content'>
                             <div style={styleImgContainer}>
-                                <img src={((lang)=>{return require('./image/piechart_'+lang+'.png')})(global.lang)} alt="" style={styleImg}/>
+                                <img src={((lang)=>{return require('./image/piechart_'+lang+'.jpg')})(global.lang_change)} alt="" style={styleImg}/>
                             </div>
                             <p className='normal-title'><br />{intl.get('ETM_PRIVATE_EQUITY')}</p>
                             <br />
@@ -63,16 +63,7 @@ class Moore extends React.Component {
                             <p className='normal-title'><br />{intl.get('TEAM_SUPPORTERS')}</p>
                             <br />
                             <p className='text-dark'>{intl.get('TEAM_SUPPORTERS_CON')}</p>
-                            <br /><br />
-                            <Divider />
-                            <p className='normal-title'><br />{intl.get('EXCELLENT_DEVELOPERS')}</p>
                             <br />
-                            <p className='text-dark'>{intl.get('EXCELLENT_DEVELOPERS_CON')}</p>
-                            <br /><br />
-                            <Divider />
-                            <p className='normal-title'><br />{intl.get('COMMUNITY_BUILDERS')}</p>
-                            <br />
-                            <p className='text-dark'>{intl.get('COMMUNITY_BUILDERS_CON')}</p>
                         </div>
                     </div>
                 </div>

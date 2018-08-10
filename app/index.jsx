@@ -77,8 +77,20 @@ class App extends React.Component {
         }
         
         global.select = currentLocale;
-        global.lang = currentLocale==('zh-CN'||'en-GB')?currentLocale:'en-GB';
-        // console.log("main:" + global.lang);
+        switch(currentLocale){
+            case'zh-CN':
+            global.lang = 'zh-CN';
+            global.lang_change = 'zh-CN';
+            break;
+            case'zh-TW':
+            global.lang = 'en-GB';
+            global.lang_change = 'zh-TW';
+            break;
+            default:
+            global.lang = 'en-GB';
+            global.lang_change = 'en-GB'
+        }
+        console.log("main:" + global.lang);
         http
             .get(`locales/${currentLocale}.json`)
             .then(res => {
