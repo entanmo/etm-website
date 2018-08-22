@@ -1,6 +1,7 @@
 { 
     "VALUE_SHARE": "コンセンサスが価値を伝達",
     "DOWNLOAD": "ダンロード",
+    "ACTIVITY": "シリコンバレーの旅",
     "UNDERSTAND": "ETMについて",
     "CONSENSUS": "ETMコンセンサス",
     "ECOSYSTEM": "ETMエコシステム",
@@ -147,7 +148,41 @@
     "EXCELLENT_DEVELOPERS": "優れたアプリケーション開発者",
     "EXCELLENT_DEVELOPERS_CON": "En-Tan-Moは、アプリケーション開発者に、IOSバージョンやAndroidバージョンなどを提供する。一般的に、アプリケーション開発のレベルでは、プロジェクトのコード量が最も多い。そのため、En-Tan-Moの力を借り、開発者はツールやフレームワークがある様々なコミュニティからサポートを受けることができる。さらに、クライアント側の開発の作業をできる限り従来の非ブロックチェーンのアプリケーション開発のアプローチに近づけるように努める。推薦されるフレームワークとツールは、標準的なプラクティスも採用する。優れたアプリを開発している開発者に、報酬としてETMトークンの総量の2％を提供する。",
     "COMMUNITY_BUILDERS": "コンポーネントライブラリコミュニティビルダー",
-    "COMMUNITY_BUILDERS_CON": "コンポーネントライブラリコミュニティビルダーは、En-Tan-Moコミュニティシステムにコンピューティングソフトウェアのコンポーネントを提供する。これらのコンポーネントは、使用価値があるコードベースであり、または顧客にサービスを提供するためのインターフェイスでもある。1％のETMトークンを高品質のコンポーネントライブラリコミュニティビルダーに報酬を与える。単位時間以内に、En-Tan-Mコミュニティが内容の価値への一人当たりの貢献度に基づいてコミュニティをランクを付けた後、ETMのこの部分をコミュニティビルダーに割り当て、コミュニティビルダーの貢献度に応じて配布される。"
+    "COMMUNITY_BUILDERS_CON": "コンポーネントライブラリコミュニティビルダーは、En-Tan-Moコミュニティシステムにコンピューティングソフトウェアのコンポーネントを提供する。これらのコンポーネントは、使用価値があるコードベースであり、または顧客にサービスを提供するためのインターフェイスでもある。1％のETMトークンを高品質のコンポーネントライブラリコミュニティビルダーに報酬を与える。単位時間以内に、En-Tan-Mコミュニティが内容の価値への一人当たりの貢献度に基づいてコミュニティをランクを付けた後、ETMのこの部分をコミュニティビルダーに割り当て、コミュニティビルダーの貢献度に応じて配布される。",
+
     
+    "ACTIVITY-TITLE":"ETM in Silicon Valley",
+    "ACTIVITY-DES":"2018 Stanford Sino-US",
+    "ACTIVITY-DES02":"Economist FinTech Innovation Forum",
+    "ACTIVITY-THEME":"Theme of the Forum",
+    "ACTIVITY-PARAGRAPH1":"Recent years have witnessed the extensive application of a host of fintechs, such as big data, cloud computing, blockchain, artificial intelligence, biological identification and IoT(Internet of Things), indicating an in-depth integration between finance and technology. Therefore, scientific and technological innovation has, without doubt, become the core of modern economic competition. ",
+    "ACTIVITY-PARAGRAPH2":"The rise of fintech presents global financial industry not only unprecedented opportunities but new challenges. Since the beginning of 2018, new economic problems and new volatility has kept cropping up. As the public comes to lose faith in the trustworthiness of financial institutions, adding to financial risk globally, blockchain technology emerges as a solution. It helps to restore trust by providing an immutable, distributed ledger system, and is thus particularly effective in addressing many of the impediments to the development of financial industry. As a result, blockchain is now widely accepted as one of the most promising next-generation fintech. ",
+    "ACTIVITY-PARAGRAPH3":"China and United States are two major power in the global financial landscape whose developments are bound to affect the world as a whole. In light of this, we and Stanford University co-sponsor the 2018 Stanford Sino-US Economist FinTech Innovation Forum and invite two Nobel Prize-winning scholars, Professor Thomas J. Sargent and Sheldon Lee Glashow, to address the forum and to share their work and thoughts on respective fields. Leading experts in blockchain technology are also invited to speak at the forum on the state-of-the-art blockchain research and application, including the latest developments of blockchain and the future trend of cryptocurrency and the blockchain industry.",
+    "ACTIVITY-PARAGRAPH4":"En-Tan-Mo is a blockchain operating system with the capacity to carry hundreds of millions of users, a coalition mining pool that provides distributed services, and a high-frequency high-traffic exchange for digital token. It is not only an open developers’ community and a self-evolving blockchain-based platform, but also an ecosystem that connects finance, energy, business and people’s lives and a next-generation internet platform for value transfer.",
+    "ACTIVITY-PARAGRAPH5":"The Forum intends to showcase the latest advances and development of blockchain technology and serves as a platform for cooperation and communication between investors, entrepreneurs and blockchain enthusiasts. At the same time, En-Tan-Mo welcomes scientists, engineers and researchers who identify with the ideals of En-Tan-Mo to join us or cooperate with us in flexible ways so as to expand application and implementation of blockchain technologies worldwide. ",
+    "ACTIVITY-ROLE-TITLE":"VIP Guests",
+
+    "ACTIVITY-ROLE01-TITLE01":"winner of the Nobel Prize in Economics | Thomas J. Sargent",
+    "ACTIVITY-ROLE01-description01":"Professor Thomas J. Sargent is a senior figure at Hoover Institution and winner of the 2011 Nobel Prize in Economics. As one of the leaders of rational expectation revolution, he has contributed significantly to the establishment and development of New Classical Macroeconomics.",
+    "ACTIVITY-ROLE01-description02":"Professor Sargent now serves as a senior advisor at En-Tan-Mo Foundation and is providing fundamental instructions and advices on the building of En-Tan-Mo economics.",
+    "ACTIVITY-ROLE02-TITLE01":"winner of the Nobel Prize in Physics | Sheldon Lee Glashow",
+    "ACTIVITY-ROLE02-description01":"Professor Sheldon Glashow is a world-renowned theoretical physicist and senior fellow at American National Academy of Science. He was awarded the Nobel Prize in Physics in 1979 and now serves as a senior advisor at En-Tan-Mo Foundation",
+    "ACTIVITY-ROLE02-description02":"Professor Glashow has devoted his career to the study of basic particles and quantum field theory. He is one of the founders of the standard model of particle physics and the first to propose the grand unified theory. He also successfully predicted the existence of neutral currents, charm quarks and charm particles, earning a high reputation in the world physics circle.",
+    "ACTIVITY-ROLE03-TITLE01":"ETM Chief Science Advisor | Dr. Aaron Yuan",
+    "ACTIVITY-ROLE03-description01":"Aaron Yuan received joint doctoral degree from Huazhong University of Science and Technology and University of Maryland under Professor Eyad-Abed, a prominent expert in distributed system and IEEE fellow. In 2015, he first proposed SHD completeness in blockchain system, attracting attentions worldwide. ",
+    "ACTIVITY-ROLE03-description02":"In En-Tan-Mo blockchain, Dr. Yuan builds UPoS-based Kantorovich consensus which guarantees the separation of token owners and mining machines as well as their respective stakes and interests via a miner election mechanism. Hence En-Tan-Mo achieves SHD completeness as efficiency is drastically enhanced without undermining security and decentralization is maintained.",
+    "ACTIVITY-ROLE04-TITLE01":"Vice President of Blackstone | Michael J Dupuis",
+    "ACTIVITY-ROLE04-description01":"Michael Dupuis serves as a Principal in the Private Wealth Management Group with a focus on raising capital for Blackstone’s private and public funds in the Pacific Northwest region. ",
+    "ACTIVITY-ROLE04-description02":"Mr. Dupuis was a Senior Vice President in the Private Client Services Division of the Trust Company of the West responsible for business development and client service of endowment, foundation and family office clients.",
+    "ACTIVITY-ROLE05-TITLE01":"President of SRI | Stephen Ciesinski",
+    "ACTIVITY-ROLE05-description01":"Stephen Ciesinski is the president of SRI. He also serves as president of Global Partnerships at SRI and a member of SRI’s strategy committee, new venture committee, and technology investment committee. He is responsible for jointly developing SRI strategy with the CEO and ensuring that corporate resources and talent are aligned with supporting SRI’s research needs.",
+    "ACTIVITY-ROLE05-description02":"Prior to joining SRI, Ciesinski has held executive management positions with several leading companies, including Applied Materials, Octel Communications, Resumix, Inc. and Laszlo Systems. ",
+  
+    "ACTIVITY-WAY-TITLE":"Co-sponsor",
+    "ACTIVITY-WAY-TITLE02":"Media",
+    "ACTIVITY-COOPERATION":"Xinhua News Agency/China News Service/China Daily/The China Press/People.cn World Journal/Sing Tao Daily/SinoVision Jinse Finance/ 36kr/ Forbes/ Merkle/ Bitcoin Magazine/ Coinbase/ Techcrunch/ SVinsight",
+    "ACTIVITY-ARRGUMENT":"Schedule",
+    "ACTIVITY-TIME":"Date: August 28, 2018",
+    "ACTIVITY-ADDRESS":"Venue: Tresidder Oak Lounge, Stanford University"    
 
 } 

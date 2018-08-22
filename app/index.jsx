@@ -10,6 +10,7 @@ import Knownledge from './containers/knownledge';
 import Ecosystem from './containers/ecosystem';
 import Consensus from './containers/consensus';
 import Moore from './containers/moore';
+import Activity from './containers/activity';
 
 import './style/antd-patch.less';
 import './style/global.less';
@@ -52,6 +53,7 @@ class App extends React.Component {
         super(props);
         // this.onSelectLocale = this.onSelectLocale.bind(this);
         document.cookie="lang=en-US";
+        // console.log(props)
     }
 
     componentDidMount() {
@@ -90,7 +92,7 @@ class App extends React.Component {
             global.lang = 'en-GB';
             global.lang_change = 'en-GB'
         }
-        console.log("main:" + global.lang);
+        // console.log("main:" + global.lang);
         http
             .get(`locales/${currentLocale}.json`)
             .then(res => {
@@ -117,6 +119,7 @@ class RouteMap extends React.Component {
                     <Route path='ecosystem(/:tabKey)' component={Ecosystem} />
                     <Route path='consensus(/:tabKey)' component={Consensus} />
                     <Route path='moore' component={Moore} />
+                    <Route path='activity' component={Activity} />
                 </Route>
             </Router>
         );

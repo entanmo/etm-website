@@ -9,11 +9,12 @@ import './style/index.less';
 import RawLogo from './image/logo.png';
 
 import intl from 'react-intl-universal';
+import { Link } from 'react-router';
+
 
 class Banner extends React.Component {
     constructor(props, context) {
         super(props, context);
-
         this.state = {
             renderSize: { width: '100%', height: '100%' }
         }
@@ -36,6 +37,7 @@ class Banner extends React.Component {
             flushRenderSize();
         });
         flushRenderSize();
+        
     }
     render() {
         const clsName = this.props.className+'-banner';
@@ -47,7 +49,12 @@ class Banner extends React.Component {
                     <div className='content flex-vertical'>
                         <img className='img-responsive' src={RawLogo} alt=""/>
                         <p className={`${clsName}-text1`}>{intl.get('VALUE_SHARE')}</p>
-                        <Button size='large' onClick={this.onClickBtn}>{intl.get('DOWNLOAD')}</Button>
+                        <div className='link-btn'>
+                            <Button size='large' onClick={this.onClickBtn}>{intl.get('DOWNLOAD')}</Button>
+                            <Button className='link-activity' size='large'  >
+                                <Link style={{color:'rgba(255, 255, 255, 0.8)'}} to='/activity'> {intl.get('ACTIVITY')}</Link>                           
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>

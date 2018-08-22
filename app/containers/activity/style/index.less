@@ -1,0 +1,143 @@
+@import '../../../style/default.less';
+@activity: activity;
+.@{activity} {
+    &-banner {
+        height: 444px;
+        padding-top: @header-height;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-title {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 40px;
+            letter-spacing: 0.7px;
+        }
+        &-desc {
+            font-size: 40px;
+            letter-spacing: 0.7px;
+        }
+    }
+    &-main {
+        text-align: left;
+        background-color: #fff;
+        .main {
+            width: 100%;
+            background-color: #f8f7f7;
+            .main-des {
+                max-width: 1080px;
+                padding: 80px 15px;
+                margin: 0 auto;
+                h5 {
+                    color: #000000;
+                    font-size: 32px;
+                }
+                .main-text {
+                    font-size: 16px;
+                    line-height: 35px;
+                    color: #000000;
+                }
+            }
+            .main-role {
+                width: 100%;
+                background-color: #fff;
+                .role-list {
+                    max-width: 1080px;
+                    padding: 80px 15px;
+                    margin: 0 auto;
+                    h4 {
+                        font-size: 32px;
+                        color: #000;
+                    }
+                }
+            }
+            .act-way {
+                width: 100%;
+                background-color: #051d2d;
+                .act-in {
+                    max-width: 1080px;
+                    margin: 0 auto;
+                    padding: 97px 15px;
+                    .act-logo{
+                      // width: 80%;
+                      height: 50px;
+                    }
+                    h4 {
+                        font-size: 32px;
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+                    .iconImg{
+                      margin-top: 20px;
+                      img{
+                        height: 40px;
+                      }
+                    }
+                    .act-cooperation{
+                      margin-top: 76px;
+                    }
+                    .act-name{
+                      letter-spacing: 1.7px;
+                      font-size: 20px;
+                    }
+                    .argument{
+                      margin-top: 56px;
+                      margin-bottom:45px;
+                    }
+                    .address, .time{
+                      font-size: 20px;
+                    }
+                    .time{
+                      margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &-banner-style1 {
+        background-image: url('../image/activity-banner.png');
+    }
+}
+
+@media screen and (max-width: 576px) {
+  .@{activity} {
+      &-banner-title {
+        color: #fff;
+        font-size: 26px;
+        margin-bottom: 40px;
+        letter-spacing: 0.7px;
+    }
+    &-banner-desc {
+        font-size: 28px;
+        letter-spacing: 0.7px;
+    }    
+  }  
+  .act-way{
+    h4{
+      font-size: 28px!important;
+    }
+    .act-cooperation{
+      margin-top: 40px!important;
+    }
+    .act-name,.time,.address{
+      font-size: 18px!important;
+    }
+    .argument{
+      margin-top: 60px!important;
+      margin-bottom: 30px!important;
+    }
+    img{
+      width:70%;
+    }
+    .iconImg{
+       img{
+         width:90%;
+       }
+    }
+  }
+
+}
