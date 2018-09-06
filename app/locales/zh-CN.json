@@ -177,7 +177,52 @@
     "ACTIVITY-COOPERATION":"新华社|中新社|中国日报|人民网|世界日报|星岛日报|美国中文电视|金色财经36氪Forbes | Merkle | Bitcoin Magazine |Coinbase Techcrunch | 硅谷密探",
     "ACTIVITY-ARRGUMENT":"会议安排",
     "ACTIVITY-TIME":"时间：2018年8月28日",
-    "ACTIVITY-ADDRESS":"地点：美国斯坦福大学Oak Lounge 学术会议厅"
+    "ACTIVITY-ADDRESS":"地点：美国斯坦福大学Oak Lounge 学术会议厅",
+    
+    "MINER-BTN":"立即加入",
+    "MINER-TITLE":"ETM“黄金矿工计划” 全球内测即将启动   ",
+    "MINER-DES":"ETM 'Golden Miners' is coming",
+    "MINER-DES-THEME":"千万「黄金」，等你来挖",
+    "MINER-PARAGRAPH1":"最近币圈凉凉，主流数字货币大跌。数据显示，比特币从2018年初的两万美元，跌到了目前的 6000 美元附近。跌幅达到惊人的 68%！",
+    "MINER-PARAGRAPH2":"币圈熊市带来的损失可谓惨重，矿工们更是哀嚎一片。",
+    "MINER-PARAGRAPH3":"币价暴跌，First blood!",
+    "MINER-PARAGRAPH4":"电费越来越贵，Double kill !",
+    "MINER-PARAGRAPH5":"挖矿难度达历史之最，Triple kill !",
+    "MINER-PARAGRAPH6":"那都不是事儿，ETM 带来的这波福利狂欢可以让你迅速回血！",
+    "MINER-PARAGRAPH7":"ETM 黄金矿工计划即将启动全球内测！",
+    "MINER-PARAGRAPH8":"限量 130 万枚代币，总价值 1300 万！",
+    "MINER-PARAGRAPH9":"9 月 1 日正式启动，限时 15 天，挖完为止。",
+
+    "MINER-DES-TITLE01":"什么是 En-Tan-Mo",
+    "MINER-DES01-PAR01":"En-Tan-Mo，灵感来源于 Entente（联盟）、Transaction（交易）和Mobius（莫比乌斯），是基于 SHD 完备性和均衡价值传递的新一代区块链项目。诺贝尔经济学奖得主、理性预期学派领袖托马斯·萨金特教授、诺贝尔物理学奖得主、大一统理论奠基人谢尔顿·格拉肖教授，以及来自于美国加州理工大学、美国马里兰大学、法国庞加莱研究所的各领域学者们，将博弈论的研究成果革命性融入区块链中，共同创作了具有 SHD 完备性的 En-Tan-Mo。在 En-Tan-Mo 世界中，SCV 矿工和 Pareto 矿池，在 Kantorovich 共识和 UPOS 机制下相互支撑、相互激励，包容各种区块链与非区块链的应用和社区，帮助所有渴望公平、民主、自由的人们，在区块链带来的去中心化思潮中，均衡的获得属于每个个体的最高权益。",
+    "MINER-DES01-PAR02":"En-Tan-Mo，不仅仅是一个最接近纳什均衡的区块链底层平台，还包含了最丰富的应用和最广泛的社区，甚至包含了严谨的数学论证和丰富的经济学内涵，从而形成了完整的哲学思想和系统。",
+    "MINER-DES-TITLE02":"第一轮内测时间",
+    "MINER-DES02-PAR01":"2018年9月1日至2018年9月15日",
+    "MINER-DES-TITLE03":"如何获得内测资格",
+    "MINER-DES03-PAR03":"矿工递交申请表单，填写矿机信息，进入候选名单。我们将会根据测试方案，选择分布在不同地域的不同规格矿机，总共 101 台，加入我们的内测名单。该名单会在九月初公布，入选矿机有一周的时间进行准备。",
+    "MINER-DES03-PAR01":"矿工下载并运行 En-Tan-Mo 节点程序，即加入 En-Tan-Mo 内测",
+    "MINER-DES03-PAR02":"GitHub 下载链接：https://github.com/entanmo",
+    "MINER-DES-TITLE04":"矿工挖矿流程",
+    "MINER-DES04-PAR01":"内测矿工在每个出块周期内合作竞争出块，通过加强型 EPow 算法和混沌排序保证了 En-Tan-Mo 的量子级安全性，从而增加每个区块的产生速度，大幅提高全局效率。",
+    "MINER-DES-TITLE05":"内测奖励",
+    "MINER-DES05-PAR01":"En-Tan-Mo 内测期间每三秒产生一个新的区块，成功上传区块的矿工将获得 3 枚内测币作为奖励，En-Tan-Mo 主网启动后，内测期间矿工得到的内测币奖励将按 1:1 映射为ETM代币。",
+    "MINER-DES-TITLE06":"温馨提示",
+    "MINER-DES06-PAR01":"由于 ETM 特有的 UPOS 机制和合作竞争挖矿模式，建议以独立矿机加入内测，比组成矿池加入的收益更高！",
+    "MINER-DES-TITLE07":"矿工安全手册",
+    "MINER-DES07-PAR01":"CPU：奔腾双核及以上",
+    "MINER-DES07-PAR02":"内存：最低4G",
+    "MINER-DES07-PAR03":"磁盘：最低50G",
+    "MINER-DES07-PAR04":"操作系统：Linux，推荐 Ubuntu18.04 桌面版",
+    "MINER-DES07-PAR05":"网络：20M 光纤及以上",
+    "MINER-DES07-PAR07":"显卡要求：POW 算力在 160MHash/s 或者与 6*RX570 相当算力或以上",
+
+    "MINER-FOOT-TITLE1":"免责条款",
+    "MINER-FOOT-PAR01":"ETM 基金会有权利根据矿工申请时间顺序、算力表现强弱以及全球分布区域等综合情况，调整入围内测的矿工名单。",
+    "MINER-FOOT-TITLE2":"相关链接",
+    "MINER-FOOT02-PAR01":"公众号：ETM区块链科学",
+    "MINER-FOOT02-PAR02":"GitHub：https://github.com/entanmo",
+    "MINER-FOOT02-PAR03":"咨询邮箱：service@entanmo.com"
+
 
     
 

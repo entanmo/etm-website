@@ -6,7 +6,7 @@ import RoleList from '../../components/activity-role';
 import './style/index.less';
 import intl from 'react-intl-universal';
 
-import logoImg  from './image/ETM.png';
+import logoImg  from './image/ETM.png'; 
 import iconImg from './image/Stanford.png';
 import Item from 'antd/lib/list/Item';
 import { Button } from 'antd';
@@ -15,7 +15,6 @@ import { Button } from 'antd';
 class Activity extends React.Component {
     constructor(props, context) {
         super(props, context);
-
     }
     componentWillMount() {
         window.scrollTo(0, 0);

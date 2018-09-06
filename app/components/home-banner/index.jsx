@@ -10,6 +10,8 @@ import RawLogo from './image/logo.png';
 
 import intl from 'react-intl-universal';
 import { Link } from 'react-router';
+import ActLists from '../../components/act-lists';
+
 
 
 class Banner extends React.Component {
@@ -46,16 +48,17 @@ class Banner extends React.Component {
                 <div className={`${clsName}-bg`}></div>
                 <CanvasStar width={this.state.renderSize.width} height={this.state.renderSize.height} />
                 <div className='container'>
-                    <div className='content flex-vertical'>
+                    <div className='content flex-vertical' style={{height:'80vh'}}>
                         <img className='img-responsive' src={RawLogo} alt=""/>
                         <p className={`${clsName}-text1`}>{intl.get('VALUE_SHARE')}</p>
                         <div className='link-btn'>
                             <Button size='large' onClick={this.onClickBtn}>{intl.get('DOWNLOAD')}</Button>
-                            <Button className='link-activity' size='large'  >
+                            {/* <Button className='link-activity' size='large'  >
                                 <Link style={{color:'rgba(255, 255, 255, 0.8)'}} to='/activity'> {intl.get('ACTIVITY')}</Link>                           
-                            </Button>
+                            </Button> */}
                         </div>
                     </div>
+                    <ActLists></ActLists>
                 </div>
             </div>
         )

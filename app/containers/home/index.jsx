@@ -5,6 +5,7 @@ import { Button } from 'antd';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Banner from '../../components/home-banner';
+// import ActLists from '../../components/act-lists';
 import Section1 from '../../components/home-section1';
 import Section2 from '../../components/home-section2';
 import Section3 from '../../components/home-section3';
@@ -31,6 +32,7 @@ class Home extends React.Component {
             <div className={this.props.className}>
                 <Header history={this.props.history} />
                 <Banner />
+                {/* <ActLists></ActLists> */}
                 <Section1 history={this.props.history}/>
                 <Section2 history={this.props.history}/>
                 <Section3 history={this.props.history}/>

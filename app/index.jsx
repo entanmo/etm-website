@@ -11,6 +11,7 @@ import Ecosystem from './containers/ecosystem';
 import Consensus from './containers/consensus';
 import Moore from './containers/moore';
 import Activity from './containers/activity';
+import GoldenMiner from './containers/goldenMiner';
 
 import './style/antd-patch.less';
 import './style/global.less';
@@ -120,6 +121,7 @@ class RouteMap extends React.Component {
                     <Route path='consensus(/:tabKey)' component={Consensus} />
                     <Route path='moore' component={Moore} />
                     <Route path='activity' component={Activity} />
+                    <Route path='goldenMiner' component={GoldenMiner} />
                 </Route>
             </Router>
         );
