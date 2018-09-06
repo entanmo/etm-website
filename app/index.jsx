@@ -54,13 +54,10 @@ class App extends React.Component {
         super(props);
         // this.onSelectLocale = this.onSelectLocale.bind(this);
         document.cookie="lang=en-US";
-        // console.log(props)
     }
-
-    componentDidMount() {
-        this.loadLocales();
+    componentWillMount(){
+      this.loadLocales();
     }
-
     render() {
         return (
             this.state.initDone &&

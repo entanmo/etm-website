@@ -21,23 +21,34 @@ class Banner extends React.Component {
             renderSize: { width: '100%', height: '100%' }
         }
     }
+    componentWillUnmount(){
+        this._isMounted = false
+        const clsName = this.props.className + '-banner';
+        const container = ReactDOM.findDOMNode(this.refs[clsName]);
+        console.log(container)
 
+    }
     componentDidMount() {
+        this._isMounted = true
+        const clsName = this.props.className + '-banner';
+        const container = ReactDOM.findDOMNode(this.refs[clsName]);
+        console.log(container)
         let flushRenderSize = () => {
-            const clsName = this.props.className + '-banner';
-            const container = ReactDOM.findDOMNode(this.refs[clsName]);
+            if(this._isMounted){
+                this.setState({
+                    renderSize: { 
+                        width: container.clientWidth,
+                        height: container.clientHeight,
+                    }
+                });
+            }
 
-            this.setState({
-                renderSize: {
-                    width: container.clientWidth,
-                    height: container.clientHeight,
-                }
-            });
         }
+            window.addEventListener('resize', () => {
+                flushRenderSize();
+            });
 
-        window.addEventListener('resize', () => {
-            flushRenderSize();
-        });
+
         flushRenderSize();
         
     }

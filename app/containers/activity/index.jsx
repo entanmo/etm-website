@@ -5,11 +5,10 @@ import Footer from '../../components/footer';
 import RoleList from '../../components/activity-role';
 import './style/index.less';
 import intl from 'react-intl-universal';
-
+import Support from '../../components/support'
 import logoImg  from './image/ETM.png'; 
 import iconImg from './image/Stanford.png';
-import Item from 'antd/lib/list/Item';
-import { Button } from 'antd';
+
 
 
 class Activity extends React.Component {
@@ -47,7 +46,6 @@ class Activity extends React.Component {
                             <div className='role-list'>
                             <h4>{intl.get('ACTIVITY-ROLE-TITLE')}</h4>
                             <RoleList></RoleList>    
-                                {/* {intl.get('ACTIVITY-LISTS')} */}
                             </div>
                         </div>
                         <div className="act-way">
@@ -58,7 +56,8 @@ class Activity extends React.Component {
                                     <img src={iconImg} alt=""/>
                                 </div>
                                 <h4 className="act-cooperation">{intl.get('ACTIVITY-WAY-TITLE02')}</h4>
-                                <p className="act-name">{intl.get('ACTIVITY-COOPERATION')}</p>
+                                <Support></Support>
+                                {/* <p className="act-name">{intl.get('ACTIVITY-COOPERATION')}</p> */}
                                 <h4 className="argument">{intl.get('ACTIVITY-ARRGUMENT')}</h4>
                                 <div className="time">{intl.get('ACTIVITY-TIME')}</div>
                                 <div className="address">{intl.get('ACTIVITY-ADDRESS')}</div>

@@ -19,26 +19,33 @@ class Section extends React.Component {
             }
         }
     }
-
+    componentWillUnmount(){
+        this._isMounted = false
+    }
     componentDidMount() {
+        this._isMounted = true
         const clsName = this.props.className + '-section2';
         const container = ReactDOM.findDOMNode(this.refs[clsName]);
 
         var flushWebGLProps = () => {
-            var width = container.clientWidth;
+            var width = container.clientWidth ;
             var height = container.clientHeight;
-            this.setState({
-                webglProps: {
-                    width: width,
-                    height: height,
-                    top: '0px',
-                }
-            });
-        }
+            if( this._isMounted){
+                this.setState({
+                    webglProps: {
+                        width: width,
+                        height: height,
+                        top: '0px',
+                    }
+                });
+            }
 
+        }
         window.addEventListener('resize', () => {
             flushWebGLProps();
         });
+ 
+
         flushWebGLProps();
     }
 

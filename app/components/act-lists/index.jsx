@@ -5,6 +5,9 @@ import Swiper from 'swiper'
 import { Link } from 'react-router';
 
 class actLists extends React.Component{
+    constructor(){
+      super()
+    }
     render(){
         return(
             <div className="act-list">

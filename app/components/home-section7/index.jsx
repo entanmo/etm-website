@@ -15,22 +15,30 @@ class Section extends React.Component {
             renderSize: { width: '100%', height: '100%' }
         };
     }
-
+    componentWillUnmount(){
+        this._isMounted = false
+    }
     componentDidMount() {
+        this._isMounted = true
+        const clsName = this.props.className + '-section7';
+        var container = ReactDOM.findDOMNode(this.refs[clsName]);
         var flushRenderSize = () => {
-            const clsName = this.props.className + '-section7';
-            var container = ReactDOM.findDOMNode(this.refs[clsName]);
-            this.setState({
-                renderSize: {
-                    width: container.clientWidth,
-                    height: container.clientHeight,
-                }
-            });
-        };
+            if(this._isMounted ){
+                this.setState({
+                    renderSize: {
+                        width: container.clientWidth ,
+                        height: container.clientHeight,
+                    }
+                });
+            }
 
+        };
+ 
         window.addEventListener('resize', () => {
             flushRenderSize();
         });
+
+
         flushRenderSize();
     }
 
