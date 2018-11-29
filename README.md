@@ -1,39 +1,16 @@
-# En-Tan-Mo Home
+English | [简体中文](./README.zh-CN.md)
 
-#### 项目介绍
-{**以下是码云平台说明，您可以替换为您的项目简介**
-码云是开源中国推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+<h1 align="center">En-Tan-Mo</h1>
+<div align="center">
 
-#### 软件架构
-软件架构说明
+[![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat)]()
+[![Platform](https://img.shields.io/badge/platform-Ubuntu-orange.svg?style=flat)](http://www.entanmo.com/download/entanmo-ubuntu.tar.gz)
+[![Platform](https://img.shields.io/badge/platform-Windows-blue.svg?style=flat)](http://www.entanmo.com/download/entanmo-windows.zip)
 
+</div>   
 
-#### 安装教程
+En-Tan-Mo is a next-generation blockchain based on Nash equilibrium and the idea of value transfer. 
 
-1. xxxx
-2. xxxx
-3. xxxx
+Its name emerged from Entente, Transaction and Mobius. The core En-Tan-Mo team consists of a remarkable consortium of scholars, including **Prof. Thomas Sargent**, the leader of the rational expectation revolution and winner of the 2011 Nobel Prize in Economics; **Prof. Sheldon Lee Glashow**, the Nobel-winning theoretical physicist who proposed the first grand unified theory; as well as scholars from California Institute of Technology, the University of Maryland and the institut Henri Poincare who achieved SHD completeness by innovatively incorporating game theory in blockchain development. En-Tan-Mo is a place where SCV miners and Pareto mining pools support and motivate each other under Kantorovich consensus, a platform that accommodates various applications and communities in different blockchains and non-blockchain systems, and a decentralized world where people longing for equality, democracy and genuine freedom are entitled to their fair share of stake. En-Tan-Mo goes beyond a blockchain-based platform. It is a community that carries the widest variety of applications and hosts the most extensive participants and the one that is built upon solid mathematical framework and guided by profound economic and philosophical thoughts. This white-book, therefore, is not sufficient to account for the significance and complexity of En-TanMo, and merely serves as a brief introduction of the project. En-Tan-Mo development team is working on producing more papers with respect to En-Tan-Mo world, philosophy, mathematics, economics, calculation and ecology so as to shed more light on the project for interested readers.
 
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+- Home Page: https://www.entanmo.com
