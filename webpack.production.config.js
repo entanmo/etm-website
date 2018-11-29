@@ -16,6 +16,7 @@ module.exports = {
     output: {
         path: __dirname + "/public",
         filename: "src/[name].[chunkhash:8].js",
+        chunkFilename: 'src/[name].[chunkhash:5].chunk.js'
     },
 
     resolve: {
@@ -29,6 +30,10 @@ module.exports = {
                 exclude: /node_modules/, 
                 loader: 'babel',
             },
+			{
+				test: /\.md$/,
+				loader: 'babel!markdown-it-react-loader'
+			},            
             { 
                 test: /\.less$/, 
                 exclude: /node_modules/, 

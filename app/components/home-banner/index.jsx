@@ -25,14 +25,14 @@ class Banner extends React.Component {
         this._isMounted = false
         const clsName = this.props.className + '-banner';
         const container = ReactDOM.findDOMNode(this.refs[clsName]);
-        console.log(container)
+        // console.log(container)
 
     }
     componentDidMount() {
         this._isMounted = true
         const clsName = this.props.className + '-banner';
         const container = ReactDOM.findDOMNode(this.refs[clsName]);
-        console.log(container)
+        // console.log(container)
         let flushRenderSize = () => {
             if(this._isMounted){
                 this.setState({

@@ -3,12 +3,13 @@
 @footer: footer;
 
 .@{footer} {
-    min-height: 72px;
+    height: 86px;
     text-align: left;
+    background-color: #081825;
 
     display: flex;
     align-items: center;
-
+    position: relative;
     .content {
         span {
             display: block;
@@ -18,13 +19,43 @@
         a {
             color: rgb(243, 243, 243);
             padding: 0 0 0 34px;
+            img {
+                zoom: 0.5;
+                opacity: 0.5;
+                width: 40px;
+            }               
         }
+        .ewm{
+            zoom: 0.5;
+            display: inline-block; 
+            padding: 0 0 0 60px; 
+            position: relative;
+            &:hover{
+                .show{
+                    visibility: visible;
+                }
+            }
+            .wx{
+                width: 60px; 
+                opacity: 0.5;
+                padding: 10px;
+
+            }  
+            .show{
+                transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+                position: absolute;
+                top: -108px;
+                right: -224px;
+                width: 223px;
+                z-index: 10;
+                visibility: hidden;
+              
+            } 
+        }         
+
     }
 
-    img {
-        zoom: 0.5;
-        opacity: 0.5;
-    }
+
 }
 
 @media screen and (min-width: @sm) {

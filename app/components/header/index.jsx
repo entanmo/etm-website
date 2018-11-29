@@ -107,7 +107,7 @@ class Header extends React.Component {
             }
         }
 
-        console.log(`selectedKeys: ${this.selectedKeys}`);
+        // console.log(`selectedKeys: ${this.selectedKeys}`);
         return (
             <div className={this.props.className}>
                 <div className='flex container'>
@@ -198,7 +198,7 @@ class Header extends React.Component {
         })
     }
     onMenuItemSelect(event) {
-        console.log('event: ', event);
+        // console.log('event: ', event);
         if("documents" === event.key){
             let reload = this.state.reload;
             this.setState({
@@ -208,9 +208,10 @@ class Header extends React.Component {
         } 
 
         this.selectedKeys = [event.key];
-        console.log('current: ', this.selectedKeys);
+        // console.log('current: ', this.selectedKeys);
     }
     onMenuItemClick(event) {
+        console.log(this.props)
         switch (event.key) {
             case 'knownledge-1': {
                 this.props.history.pushState(null, 'knownledge/0');

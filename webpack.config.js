@@ -6,7 +6,8 @@ var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 module.exports = {
 	entry: path.resolve(__dirname, "app/index.jsx"),
 	output: {
-		filename: "bundle.js"
+		filename: "bundle.js",
+		chunkFilename: '[name].[chunkhash:5].chunk.js'
 	},
 
 	resolve: {
@@ -19,6 +20,10 @@ module.exports = {
 				test: /\.(js|jsx)$/, 
 				exclude: /node_modules/, 
 				loader: 'babel'
+			},
+			{
+				test: /\.md$/,
+				loader: 'babel!markdown-it-react-loader'
 			},
 			{ 
 				test: /\.less$/, 

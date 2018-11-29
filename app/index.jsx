@@ -4,17 +4,9 @@ import { hashHistory, Router, Route, IndexRoute } from 'react-router';
 import intl from 'react-intl-universal';
 import _ from "lodash";
 import http from "axios";
-
-import Home from './containers/home';
-import Knownledge from './containers/knownledge';
-import Ecosystem from './containers/ecosystem';
-import Consensus from './containers/consensus';
-import Moore from './containers/moore';
-import Activity from './containers/activity';
-import GoldenMiner from './containers/goldenMiner';
-
 import './style/antd-patch.less';
 import './style/global.less';
+import './style/markdown.less';
 
 const SUPPOER_LOCALES = [
     {
@@ -60,10 +52,10 @@ class App extends React.Component {
     }
     render() {
         return (
-            this.state.initDone &&
-            <div>
-                {this.props.children}
-            </div>
+          this.state.initDone &&
+          <div>
+              {this.props.children}
+          </div>
         );
     }
 
@@ -75,7 +67,7 @@ class App extends React.Component {
         if (!_.find(SUPPOER_LOCALES, { value: currentLocale })) {
             currentLocale = "en-GB";
         }
-        
+
         global.select = currentLocale;
         switch(currentLocale){
             case'zh-CN':
@@ -107,20 +99,73 @@ class App extends React.Component {
     }
 }
 
+// const ActivityList  = (location, cb) => {
+//     require.ensure([], require => {
+//       cb(null, require('./containers/activityList').default);
+//     }, 'ActivityList');
+//   };
+// const Md1 = (location,cb) => {
+// 	require.ensure([],require => {
+// 		cb(null,require(`./markdown/page-${global.lang}.md`).default)
+// 	},'Md2')
+// }
+// const Md3 = (location,cb) => {
+// 	require.ensure([],require => {
+// 		cb(null,require('./markdown/3.md').default)
+// 	},'Md3')
+// }
+
+const Home  = (location, cb) => {
+  require.ensure([], require => {
+    cb(null, require('./containers/home').default);
+  }, 'Home');
+};
+const Knownledge = (location,cb) => {
+	require.ensure([],require => {
+		cb(null,require('./containers/knownledge').default)
+	},'Knownledge')
+}
+const Ecosystem = (location,cb) => {
+	require.ensure([],require => {
+		cb(null,require('./containers/ecosystem').default)
+	},'Ecosystem')
+}
+const Consensus = (location,cb) => {
+	require.ensure([],require => {
+		cb(null,require('./containers/consensus').default)
+	},'Consensus')
+}
+const Moore = (location,cb) => {
+	require.ensure([],require => {
+		cb(null,require('./containers/moore').default)
+	},'Moore')
+}
+const Activity = (location,cb) => {
+	require.ensure([],require => {
+		cb(null,require('./containers/activity').default)
+	},'Activity')
+}
+const GoldenMiner = (location,cb) => {
+	require.ensure([],require => {
+		cb(null,require('./containers/goldenMiner').default)
+	},'GoldenMiner')
+}
+//<Route path='activityList/:name' getComponent={Md1} />
+//<Route path='activityList' getComponent={ActivityList} />
 class RouteMap extends React.Component {
     render() {
         return (
-            <Router history={this.props.history}>
-                <Route path='/' component={App}>
-                    <IndexRoute component={Home} />
-                    <Route path='knownledge(/:tabKey)' component={Knownledge} />
-                    <Route path='ecosystem(/:tabKey)' component={Ecosystem} />
-                    <Route path='consensus(/:tabKey)' component={Consensus} />
-                    <Route path='moore' component={Moore} />
-                    <Route path='activity' component={Activity} />
-                    <Route path='goldenMiner' component={GoldenMiner} />
-                </Route>
-            </Router>
+          <Router history={this.props.history}>
+            <Route path='/' component={App}>
+              <IndexRoute getComponent={Home} />
+              <Route path='knownledge(/:tabKey)' getComponent={Knownledge} />
+              <Route path='ecosystem(/:tabKey)' getComponent={Ecosystem} />
+              <Route path='consensus(/:tabKey)' getComponent={Consensus} />
+              <Route path='moore' getComponent={Moore} />
+              <Route path='activity' getComponent={Activity} />
+              <Route path='goldenMiner' getComponent={GoldenMiner} />
+            </Route>
+          </Router>
         );
     }
 }
