@@ -1,0 +1,30 @@
+.home-routeMap {
+  background-color: #14222f;
+  width: 100%;
+  padding: 0 15px;
+  padding-bottom: 60px;
+}
+.home-routeMap .content-map {
+  display: block;
+}
+.home-routeMap .content-map .title {
+  font-size: 38px;
+  padding-bottom: 40px;
+  padding-top: 100px;
+}
+.home-routeMap .mcontent-map {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .home-routeMap .content-map {
+    display: none;
+  }
+  .home-routeMap .mcontent-map {
+    display: block;
+  }
+  .home-routeMap .mcontent-map .title {
+    font-size: 38px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+}

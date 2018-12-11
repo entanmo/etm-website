@@ -1,13 +1,13 @@
-.consensus-tabpane2 {
+.act-role-tabpane2 {
   text-align: left;
 }
-.consensus-tabpane2-info {
+.act-role-tabpane2-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.consensus-tabpane2-detail {
+.act-role-tabpane2-detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,10 +15,10 @@
   padding-top: 40px;
 }
 @media screen and (min-width: 576px) {
-  .consensus-tabpane2-info {
+  .act-role-tabpane2-info {
     flex-direction: row;
   }
-  .consensus-tabpane2-detail {
+  .act-role-tabpane2-detail {
     padding-left: 80px;
     padding-top: 0;
   }

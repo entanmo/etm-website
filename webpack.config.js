@@ -16,33 +16,33 @@ module.exports = {
 
 	module: {
 		loaders: [
-			{ 
-				test: /\.(js|jsx)$/, 
-				exclude: /node_modules/, 
+			{
+				test: /\.(js|jsx)$/,
+				exclude: /node_modules/,
 				loader: 'babel'
 			},
 			{
 				test: /\.md$/,
 				loader: 'babel!markdown-it-react-loader'
 			},
-			{ 
-				test: /\.less$/, 
-				exclude: /node_modules/, 
+			{
+				test: /\.less$/,
+				exclude: /node_modules/,
 				loader: 'style!css!postcss!less'
 			},
-			{ 
-				test: /\.css$/, 
-				exclude: /node_modules/, 
+			{
+				test: /\.css$/,
+				exclude: /node_modules/,
 				loader: 'style!css!postcss'
 			},
-			{ 
-				test: /\.(png|gif|jpg|svg|jpeg)$/i, 
-				exclude: /node_modules/, 
+			{
+				test: /\.(png|gif|jpg|svg|jpeg)$/i,
+				exclude: /node_modules/,
 				loader: 'file-loader'
 			},
-			{ 
-				test: /\.(ttf|otf|eot|svg)$/, 
-				exclude: /node_modules/, 
+			{
+				test: /\.(ttf|otf|eot|svg)$/,
+				exclude: /node_modules/,
 				loader: 'file-loader'
 			},
 		]

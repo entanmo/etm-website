@@ -13,7 +13,7 @@ import Section4 from '../../components/home-section4';
 import Section5 from '../../components/home-section5';
 import Section6 from '../../components/home-section6';
 import Section7 from '../../components/home-section7';
-
+import RouteMap from '../../components/routeMap'
 import FlipCountdown from '../../components/flipcountdown';
 
 import './style/index.less';
@@ -38,7 +38,8 @@ class Home extends React.Component {
                 <Section3 history={this.props.history}/>
                 <Section4 history={this.props.history}/>
                 <Section5 history={this.props.history}/>
-                <Section6 history={this.props.history}/>
+                <RouteMap/>
+                {/*<Section6 history={this.props.history}/>*/}
                 <Section7 history={this.props.history}/>
                 <Footer />
             </div>
