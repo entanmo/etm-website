@@ -4,10 +4,12 @@
 .@{header} {
     width: 100%;
     min-height: @header-height;
-    
+
     background-color: rgba(0, 0, 0, 0.85);
 
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: @header-zindex;
 
     > .container {
@@ -19,7 +21,7 @@
             border: 0;
         }
     }
-   
+
     &-brand {
         width: 46px;
         height: 46px;
@@ -56,11 +58,11 @@
     .@{patch-ant-menu} {
         &-horizontal {
             border-bottom: 0;
-            
+
             > .@{patch-ant-menu}-item,
             > .@{patch-ant-menu}-submenu {
                 border-bottom: 0;
-                
+
                 &:hover,
                 &-active,
                 &-open,
@@ -69,13 +71,13 @@
                 }
             }
         }
-        
+
         &-inline,
         &-vertical,
         &-vertical-left {
             border-right: 0;
         }
-        
+
         &-vertical,
         &-vertical-left,
         &-vertical-right,
@@ -86,7 +88,7 @@
                 }
             }
         }
-        &-submenu {        
+        &-submenu {
             > .@{patch-ant-menu} {
                 background-color: transparent;
             }
@@ -101,7 +103,7 @@
             height: 36px;
             background-image: url('../image/logo2.png');
             background-repeat: no-repeat;
-        }        
+        }
     }
 }
 

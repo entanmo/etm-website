@@ -7,6 +7,7 @@
     "ECOSYSTEM": "ETM生态特性",
     "MOORE_ECONOMICS": "ETM经济",
     "DOCUMENTS": "资料下载",
+    "NEWS": "资讯",
 
     "INTRODUCTION": "ETM简介",
     "INTRODUCTION_CON": "高效、均衡、互通、开放、安全，经过科学论证的区块链3.0平台。",
@@ -223,7 +224,9 @@
     "MINER-FOOT02-PAR02":"GitHub：https://github.com/entanmo",
     "MINER-FOOT02-PAR03":"咨询邮箱：service@entanmo.com",
 
-    "ROAD-MAP":"路线图"
+    "ROAD-MAP":"路线图",
+    "ARTICLE-TITLE":"ETM 资讯",
+    "ARTICLE-DES":"ETM 区块链科学"
 
 
 

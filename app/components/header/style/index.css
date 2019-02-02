@@ -3,11 +3,17 @@
   min-height: 60px;
   background-color: rgba(0, 0, 0, 0.85);
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1024;
 }
 .header > .container {
   min-height: 60px;
   padding: 0 44px;
+}
+.header > .container .langchange {
+  background-color: black;
+  border: 0;
 }
 .header-brand {
   width: 46px;
@@ -60,9 +66,10 @@
 }
 @media screen and (min-width: 768px) {
   .header-brand {
-    width: 223px;
-    height: 46px;
-    background-image: url('../image/logo.png');
+    width: 172px;
+    height: 36px;
+    background-image: url('../image/logo2.png');
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 992px) {

@@ -7,6 +7,7 @@
     "ECOSYSTEM": "Ecosystem",
     "MOORE_ECONOMICS": "Economics",
     "DOCUMENTS": "Documents",
+    "NEWS": "News",
 
     "INTRODUCTION": "ETM introduction",
     "INTRODUCTION_CON": "High-Performance, Equilibrium, Interconnection, Openness, Security.",
@@ -223,7 +224,10 @@
     "MINER-FOOT02-PAR02":"GitHub：https://github.com/entanmo",
     "MINER-FOOT02-PAR03":"E-mail：service@entanmo.com",
 
-    "ROAD-MAP":"Road Map"
+    "ROAD-MAP":"Road Map",
+
+    "ARTICLE-TITLE":"ETM News",
+    "ARTICLE-DES":"ETM Blockchain Science"
 
 
 }

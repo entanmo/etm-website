@@ -86,9 +86,9 @@ class Header extends React.Component {
             mediaQueryList.addListener((mediaQueryListEvent) => {
                 this.setState({
                     mediaQuery: !mediaQueryListEvent.matches,
-                });                
+                });
             })
-        
+
         } else {
             window.addEventListener('resize', () => { this.onMediaQuery() });
             this.onMediaQuery();
@@ -113,18 +113,18 @@ class Header extends React.Component {
                 <div className='flex container'>
                     <a className={`${this.props.className}-brand`} href=""></a>
                     {
-                        this.state.collapse ? 
-                            <div className={`${this.props.className}-toggle`} 
+                        this.state.collapse ?
+                            <div className={`${this.props.className}-toggle`}
                                 onClick={(...args) => {this.onMenuCollapse(false, ...args)}}>
                                 <Icon type='bars' style={{fontSize: '32px', color: '#fff'}}/>
                             </div>:
-                            <div className={`${this.props.className}-toggle`} 
+                            <div className={`${this.props.className}-toggle`}
                                 onClick={(...args) => {this.onMenuCollapse(true, ...args)}}>
                                 <Icon type='close' style={{fontSize: '32px', color: '#fff'}} />
                             </div>
                     }
                     <div className={`${this.props.className}-collapse ${collapseStyle}`}>
-                        <Menu 
+                        <Menu
                             mode={menuMode}
                             onClick={(...args) => { this.onMenuItemClick(...args) }}
                             onSelect={(...args) => { this.onMenuItemSelect(...args) }}
@@ -147,6 +147,7 @@ class Header extends React.Component {
                                 </Menu.SubMenu>
                                 <Menu.Item key='moore'>{intl.get('MOORE_ECONOMICS')}</Menu.Item>
                                 <Menu.Item key='documents' >{intl.get('DOCUMENTS')}</Menu.Item>
+                                <Menu.Item key='news' >{intl.get('NEWS')}</Menu.Item>
                                 <Menu.SubMenu className='lang-select' title={this.getViewLang()}>
                                     <Menu.Item key='lang-1'>{SUPPOER_LOCALES[0].name}</Menu.Item>
                                     <Menu.Item key='lang-2'>{SUPPOER_LOCALES[1].name}</Menu.Item>
@@ -176,8 +177,8 @@ class Header extends React.Component {
 
     // renderLocaleSelector() {
     //     return (
-    //       <select onChange={this.onSelectLocale} 
-    //       defaultValue={global.select} 
+    //       <select onChange={this.onSelectLocale}
+    //       defaultValue={global.select}
     //       className='langchange'>
     //         {/* <option value="" disabled></option> */}
     //         {SUPPOER_LOCALES.map(locale => (
@@ -186,7 +187,7 @@ class Header extends React.Component {
     //       </select>
     //     );
     // }
-    
+
     // onSelectLocale(e) {
     //     let lang = e.target.value;
     //     location.search = `?lang=${lang}`;
@@ -205,7 +206,7 @@ class Header extends React.Component {
                 reload: !reload
             });
             return ;
-        } 
+        }
 
         this.selectedKeys = [event.key];
         // console.log('current: ', this.selectedKeys);
@@ -262,19 +263,20 @@ class Header extends React.Component {
                 this.props.history.pushState(null, 'ecosystem/4');
                 break;
             }
-
             case 'moore': {
                 this.props.history.pushState(null, 'moore');
                 break;
             }
-
+            case 'news' : {
+              this.props.history.pushState(null, 'articleList');
+              break;
+            }
             case 'documents': {
                 var pdfTemp =  ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.select);
                 window.open(pdfTemp);
                 document.getElementsByClassName("ant-menu-item").r
                 break;
             }
-
             case 'lang-1': {
                 let lang = SUPPOER_LOCALES[0].value;
                 location.search = `?lang=${lang}`;

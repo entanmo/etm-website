@@ -6,7 +6,7 @@
     "CONSENSUS": "ETM共識",
     "ECOSYSTEM": "ETM生態特性",
     "MOORE_ECONOMICS": "ETM經濟",
-    "DOCUMENTS": "資料下載",
+    "DOCUMENTS": "資訊",
 
     "INTRODUCTION": "ETM簡介",
     "INTRODUCTION_CON": "高效、均衡、互通、開放、安全，經過科學論證的區塊鏈3.0平台。",
@@ -225,6 +225,8 @@
     "MINER-FOOT02-PAR02":"GitHub：https://github.com/entanmo",
     "MINER-FOOT02-PAR03":"諮詢郵箱：service@entanmo.com",
 
-    "ROAD-MAP":"路線圖"
+    "ROAD-MAP":"路線圖",
+    "ARTICLE-TITLE":"ETM 資訊",
+    "ARTICLE-DES":"ETM 區塊鏈科學"
 
 }

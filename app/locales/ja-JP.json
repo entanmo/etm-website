@@ -7,6 +7,7 @@
     "ECOSYSTEM": "ETMエコシステム",
     "MOORE_ECONOMICS": "ムーア経済",
     "DOCUMENTS": "ドキュメント",
+    "NEWS": "News",
 
     "INTRODUCTION": "ETMについて",
     "INTRODUCTION_CON": "高効率、平衡、インターワーキング、オープン、安全、科学的に論証されたブロックチェーン３.0プラットフォーム。",
@@ -230,5 +231,7 @@
     "MINER-FOOT02-PAR02":"GitHub：https://github.com/entanmo",
     "MINER-FOOT02-PAR03":"E-mail：service@entanmo.com",
 
-    "ROAD-MAP":"Road Map"
+    "ROAD-MAP":"Road Map",
+    "ARTICLE-TITLE":"ETM News",
+    "ARTICLE-DES":"ETM Blockchain Science"
 }

@@ -49,24 +49,24 @@ class Section extends React.Component {
                     <div className='content'>
                         <Row gutter={16}>
                             <Col xs={24} sm={12} md={8} >
-                                <Block 
+                                <Block
                                     logo={RawBlock1}
                                     title={intl.get('INTRODUCTION')}
-                                    desc={intl.get('INTRODUCTION_CON')} 
+                                    desc={intl.get('INTRODUCTION_CON')}
                                     callback = {() => {this.gotoLink(0);}} />
                             </Col>
                             <Col xs={24} sm={12} md={8} >
-                                <Block 
+                                <Block
                                     logo={RawBlock2}
                                     title={intl.get('SHD_COMPLETENESS')}
-                                    desc={intl.get('SHD_COMPLETENESS_CON')} 
+                                    desc={intl.get('SHD_COMPLETENESS_CON')}
                                     callback = {() => {this.gotoLink(1);}} />
                             </Col>
                             <Col xs={24} sm={12} md={8} >
-                                <Block 
+                                <Block
                                     logo={RawBlock3}
                                     title={intl.get('EQUILIBRIUM')}
-                                    desc={intl.get('EQUILIBRIUM_CON')} 
+                                    desc={intl.get('EQUILIBRIUM_CON')}
                                     callback = {() => {this.gotoLink(2);}} />
                             </Col>
                         </Row>

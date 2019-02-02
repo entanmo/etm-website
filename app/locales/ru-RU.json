@@ -7,6 +7,7 @@
     "ECOSYSTEM": "ЕТМ Экосистема",
     "MOORE_ECONOMICS": "ЕТМ Экономика",
     "DOCUMENTS": "Документы",
+    "NEWS": "информация",
 
     "INTRODUCTION": "Введение в ЕТМ",
     "INTRODUCTION_CON": "Высокая производительность, Равновесия, Взаимосвязи, Открытость, Безопасность，Обоснованная наукой платформа блокчейна 3.0",
@@ -229,5 +230,7 @@
     "MINER-FOOT02-PAR02":"GitHub：https://github.com/entanmo",
     "MINER-FOOT02-PAR03":"E-mail：service@entanmo.com",
 
-    "ROAD-MAP":"Road Map"
+    "ROAD-MAP":"Road Map",
+    "ARTICLE-TITLE":"ETM News",
+    "ARTICLE-DES":"ETM Blockchain Science"
 }

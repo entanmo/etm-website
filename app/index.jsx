@@ -98,23 +98,21 @@ class App extends React.Component {
             });
     }
 }
-
-// const ActivityList  = (location, cb) => {
-//     require.ensure([], require => {
-//       cb(null, require('./containers/activityList').default);
-//     }, 'ActivityList');
-//   };
-// const Md1 = (location,cb) => {
-// 	require.ensure([],require => {
-// 		cb(null,require(`./markdown/page-${global.lang}.md`).default)
-// 	},'Md2')
-// }
-// const Md3 = (location,cb) => {
-// 	require.ensure([],require => {
-// 		cb(null,require('./markdown/3.md').default)
-// 	},'Md3')
-// }
-
+// const Test  = (location, cb) => {
+//   require.ensure([], require => {
+//     cb(null, require('./containers/testa').default);
+//   }, 'Test');
+// };
+const ArticleList  = (location, cb) => {
+    require.ensure([], require => {
+      cb(null, require('./containers/articleList').default);
+    }, 'ArticleList');
+  };
+const Article  = (location, cb) => {
+  require.ensure([], require => {
+    cb(null, require('./containers/article').default);
+  }, 'Article');
+};
 const Home  = (location, cb) => {
   require.ensure([], require => {
     cb(null, require('./containers/home').default);
@@ -150,8 +148,7 @@ const GoldenMiner = (location,cb) => {
 		cb(null,require('./containers/goldenMiner').default)
 	},'GoldenMiner')
 }
-//<Route path='activityList/:name' getComponent={Md1} />
-//<Route path='activityList' getComponent={ActivityList} />
+
 class RouteMap extends React.Component {
     render() {
         return (
@@ -164,6 +161,8 @@ class RouteMap extends React.Component {
               <Route path='moore' getComponent={Moore} />
               <Route path='activity' getComponent={Activity} />
               <Route path='goldenMiner' getComponent={GoldenMiner} />
+              <Route path='articleList' getComponent={ArticleList} />
+              <Route path='articleList/article(/:name)' getComponent={Article} />
             </Route>
           </Router>
         );

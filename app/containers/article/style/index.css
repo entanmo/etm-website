@@ -1,0 +1,16 @@
+.main {
+  max-width: 1080px;
+  padding: 80px 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.main .breadcrumb {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.main .doc pre {
+  padding: 10px;
+}
+.main .doc ol > li {
+  color: #314659!important;
+}
