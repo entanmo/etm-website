@@ -1,0 +1,54 @@
+@import '../../../style/default.less';
+
+@home-section1: random-section1;
+
+.@{home-section1} {
+    // background-image: url('../image/background.png');
+    background-color: #041620;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 480px;
+    padding: 20px 0 0;
+    .content{
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+    .title-text{
+      font-size: 28px;
+      margin-top: 5px;
+    }
+    .img-icon{
+      width:234px
+    }
+    .text{
+        font-size: 20px;
+        padding: 5% 0 4%;
+    }
+    .info{
+    width:50vh;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: justify;
+    }
+}
+
+@media screen and (max-width: 576px) {
+  .@{home-section1} {
+    .img-icon{
+      width:165px
+    }
+    .info{
+      width: 95%
+    }
+    .title-text{
+      font-size: 24px;
+    }
+  }
+
+}

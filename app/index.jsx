@@ -98,11 +98,8 @@ class App extends React.Component {
             });
     }
 }
-// const Test  = (location, cb) => {
-//   require.ensure([], require => {
-//     cb(null, require('./containers/testa').default);
-//   }, 'Test');
-// };
+
+
 const ArticleList  = (location, cb) => {
     require.ensure([], require => {
       cb(null, require('./containers/articleList').default);
@@ -162,7 +159,7 @@ class RouteMap extends React.Component {
               <Route path='activity' getComponent={Activity} />
               <Route path='goldenMiner' getComponent={GoldenMiner} />
               <Route path='articleList' getComponent={ArticleList} />
-              <Route path='articleList/article(/:name)' getComponent={Article} />
+               <Route path='articleList/article(/:name)' getComponent={Article} />
             </Route>
           </Router>
         );

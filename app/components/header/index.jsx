@@ -271,6 +271,10 @@ class Header extends React.Component {
               this.props.history.pushState(null, 'articleList');
               break;
             }
+            case 'timeTower' : {
+              this.props.history.pushState(null, 'timeTower');
+              break;
+            }
             case 'documents': {
                 var pdfTemp =  ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.select);
                 window.open(pdfTemp);
