@@ -78,9 +78,9 @@ module.exports = {
 //             }
 //         }),
        
-//        new webpack.DefinePlugin({
-//            'process.env.NODE_ENV': JSON.stringify('production')
-//        }),
+       new webpack.DefinePlugin({
+           'process.env.NODE_ENV': JSON.stringify('production')
+       }),
         new webpack.optimize.UglifyJsPlugin(),
 
         new webpack.optimize.OccurrenceOrderPlugin(),
@@ -96,24 +96,24 @@ module.exports = {
         new ExtractTextPlugin('css/[name].[chunkhash:8].css'),
 
         
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendor',
-            filename: 'src/[name].[chunkhash:8].js'
-        }),
+//         new webpack.optimize.CommonsChunkPlugin({
+//             name: 'vendor',
+//             filename: 'src/[name].[chunkhash:8].js'
+//         }),
        
        new webpack.optimize.CommonsChunkPlugin({
            name: 'jsLib',
            filename: 'src/[name].[chunkhash:8].js'
        }),
-//        new webpack.optimize.CommonsChunkPlugin({
-//            name: 'uiLib',
-//            filename: 'src/[name].[chunkhash:8].js'
-//        }),
+       new webpack.optimize.CommonsChunkPlugin({
+           name: 'uiLib',
+           filename: 'src/[name].[chunkhash:8].js'
+       }),
 
         
-        new webpack.DefinePlugin({
-            __DEV__: JSON.stringify(JSON.parse((process.env.NODE_ENV == 'dev') || 'false'))
-        })
+//         new webpack.DefinePlugin({
+//             __DEV__: JSON.stringify(JSON.parse((process.env.NODE_ENV == 'dev') || 'false'))
+//         })
        
     ]
 }

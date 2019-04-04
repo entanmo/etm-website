@@ -94,4 +94,4 @@
 .classify-box{width: 1080px;margin: 0 auto;}
 .classify-box .classify-list{margin-right: 2px;padding: 0 16px;transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);line-height: 38px;display: inline-block;float: left;cursor: pointer;}
 .classify-box .classify-list:hover{color: #ff2717}
-.classify-box .classify-list.active{color: #ff2717}
+.classify-box .classify-list.active{color: #ff2717;font-weight: 600;}
