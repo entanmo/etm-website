@@ -104,7 +104,12 @@ const ArticleList  = (location, cb) => {
     require.ensure([], require => {
       cb(null, require('./containers/articleList').default);
     }, 'ArticleList');
-  };
+};
+const ArticleListTwo  = (location, cb) => {
+    require.ensure([], require => {
+      cb(null, require('./containers/articleListTwo').default);
+    }, 'ArticleListTwo');
+};
 const Article  = (location, cb) => {
   require.ensure([], require => {
     cb(null, require('./containers/article').default);
@@ -159,7 +164,9 @@ class RouteMap extends React.Component {
               <Route path='activity' getComponent={Activity} />
               <Route path='goldenMiner' getComponent={GoldenMiner} />
               <Route path='articleList' getComponent={ArticleList} />
-               <Route path='articleList/article(/:name)' getComponent={Article} />
+              <Route path='articleList/article(/:name)' getComponent={Article} />
+			  <Route path='articleListTwo' getComponent={ArticleListTwo} />
+			  <Route path='articleListTwo/article(/:name)' getComponent={Article} />
             </Route>
           </Router>
         );

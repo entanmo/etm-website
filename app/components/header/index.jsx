@@ -147,7 +147,11 @@ class Header extends React.Component {
                                 </Menu.SubMenu>
                                 <Menu.Item key='moore'>{intl.get('MOORE_ECONOMICS')}</Menu.Item>
                                 <Menu.Item key='documents' >{intl.get('DOCUMENTS')}</Menu.Item>
-                                <Menu.Item key='news' >{intl.get('NEWS')}</Menu.Item>
+								<Menu.SubMenu title={intl.get('NEWS')}>
+								    <Menu.Item key='news-1'>{intl.get('UPCOMING_EVENTS')}</Menu.Item>
+								    <Menu.Item key='news-2'>{intl.get('FEATURED_ARTICLE')}</Menu.Item>
+								</Menu.SubMenu>
+								
                                 <Menu.SubMenu className='lang-select' title={this.getViewLang()}>
                                     <Menu.Item key='lang-1'>{SUPPOER_LOCALES[0].name}</Menu.Item>
                                     <Menu.Item key='lang-2'>{SUPPOER_LOCALES[1].name}</Menu.Item>
@@ -267,10 +271,14 @@ class Header extends React.Component {
                 this.props.history.pushState(null, 'moore');
                 break;
             }
-            case 'news' : {
+            case 'news-1' : {
               this.props.history.pushState(null, 'articleList');
               break;
             }
+			case 'news-2' : {
+			  this.props.history.pushState(null, 'articleListTwo');
+			  break;
+			}
             case 'timeTower' : {
               this.props.history.pushState(null, 'timeTower');
               break;
