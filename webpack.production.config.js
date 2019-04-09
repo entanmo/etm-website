@@ -101,14 +101,14 @@ module.exports = {
 //             filename: 'src/[name].[chunkhash:8].js'
 //         }),
        
-       new webpack.optimize.CommonsChunkPlugin({
-           name: 'jsLib',
-           filename: 'src/[name].[chunkhash:8].js'
-       }),
-       new webpack.optimize.CommonsChunkPlugin({
-           name: 'uiLib',
-           filename: 'src/[name].[chunkhash:8].js'
-       }),
+//        new webpack.optimize.CommonsChunkPlugin({
+//            name: 'jsLib',
+//            filename: 'src/[name].[chunkhash:8].js'
+//        }),
+//        new webpack.optimize.CommonsChunkPlugin({
+//            name: 'uiLib',
+//            filename: 'src/[name].[chunkhash:8].js'
+//        }),
 
         
 //         new webpack.DefinePlugin({
