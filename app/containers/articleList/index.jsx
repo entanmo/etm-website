@@ -65,20 +65,19 @@ class ArticleList extends React.Component {
             <div className={this.props.className}>
                 <Header history={this.props.history}  currentKey={this.currentKey}/>
 				<div className={`${this.props.className}-banner ${this.props.className}-banner-style1`}>
-						<p className={`${this.props.className}-banner-title`}>{intl.get('ARTICLE-TITLE')}</p>
-						<p className={`${this.props.className}-banner-desc`}
-								style={{
-										maxWidth: '528px'
-								}}>{intl.get('ARTICLE-DES')}</p>
+					<p className={`${this.props.className}-banner-title`}>{intl.get('ARTICLE-TITLE')}</p>
+					<p className={`${this.props.className}-banner-desc`}
+						style={{
+							maxWidth: '528px'
+						}}>{intl.get('ARTICLE-DES')}</p>
 				</div>
-				
 				<div className={`classify`}>
 					<div className={`classify-box`}>
 						<Link to="/articleList"><div className={`classify-list active`}>{intl.get('UPCOMING_EVENTS')}</div></Link>
-						<Link to="/articleListTwo"><div className={`classify-list`}>{intl.get('FEATURED_ARTICLE')}</div></Link>
+						<Link to="/articleListTwo"><div className={`classify-list`}>{intl.get('CURRENT_EVENTS')}</div></Link>
+						<Link to="/articleListThree"><div className={`classify-list`}>{intl.get('ETM_SOUND')}</div></Link>
 					</div>
 				</div>
-				
 				<div id="wrapper" className="article-wrapper">
 				{ this.state.lists.map((item) =>
 						<div key={item.id} className="article-item">

@@ -6,8 +6,10 @@
     "CONSENSUS": "ETM共识",
     "ECOSYSTEM": "ETM生态特性",
     "MOORE_ECONOMICS": "ETM经济",
+	"NEWS": "资讯",
+	"WALLET": "钱包",
     "DOCUMENTS": "资料下载",
-    "NEWS": "资讯",
+    
 
     "INTRODUCTION": "ETM简介",
     "INTRODUCTION_CON": "高效、均衡、互通、开放、安全，经过科学论证的区块链3.0平台。",
@@ -104,7 +106,8 @@
     "CENTRA-DERIVED_CHAINS_CON2": "为了解决区块链快速和区块链即服务(BaaS)的问题,“En-Tan-Mo”采用了一条中心链加多条衍生链的设计,中心链负责网络安全及价值交换。衍生链是一种特殊的区块链,每一个衍生链对应一个DAPP,是一个独立的、隔离的系统,通过继承和复用主链强大的区块技术,每个应用都拥有一套个性化的账本,拥有自己的代币,其共识机制、区块参数、交易类型都是可以被定制的。各衍生链之间具有平行关系,即衍生链与衍生链之间互为平行链。它们可以通过中心链的“平行链交互层”实现其与中心链、其他衍生链及外部区块链链之间的双向资产传递,这使得用户能用已有的资产来使用“En-Tan-Mo”系统。",
 
 	"UPCOMING_EVENTS": "活动公告",
-	"FEATURED_ARTICLE": "精选文章",
+	"CURRENT_EVENTS": "新闻动态",
+	"ETM_SOUND": "ETM有声",
 
     "PARALLEL_CHAIN": "平行链交互协议",
     "PARALLEL_CHAIN_CON": "通过跨链技术实现价值传递区块链向外拓展和连接的桥梁",
@@ -229,7 +232,7 @@
 
     "ROAD-MAP":"路线图",
     "ARTICLE-TITLE":"ETM 资讯",
-    "ARTICLE-DES":"ETM 区块链科学"
+    "ARTICLE-DES":"ETM 科学院"
 
 
 

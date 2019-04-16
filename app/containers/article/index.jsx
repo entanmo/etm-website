@@ -5,6 +5,7 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 import list from '../../markdown/js/list';
 import listTwo from '../../markdown/js/listTwo';
+import listThree from '../../markdown/js/listThree';
 import './style/index.less'
   class Article extends React.Component{
     constructor(props){
@@ -24,6 +25,9 @@ import './style/index.less'
         arr.push(title)
       }
 			for(const [title,detail] of Object.entries(listTwo)){
+			  arr.push(title)
+			}
+			for(const [title,detail] of Object.entries(listThree)){
 			  arr.push(title)
 			}
       if(url.match(reg) && arr.indexOf(path) !== -1){

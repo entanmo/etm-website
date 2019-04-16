@@ -71,14 +71,13 @@ class ArticleListTwo extends React.Component {
                             maxWidth: '528px'
                         }}>{intl.get('ARTICLE-DES')}</p>
                 </div>
-								
-								<div className={`classify`}>
-									<div className={`classify-box`}>
-										<Link to="/articleList"><div className={`classify-list`}>{intl.get('UPCOMING_EVENTS')}</div></Link>
-										<Link to="/articleListTwo"><div className={`classify-list active`}>{intl.get('FEATURED_ARTICLE')}</div></Link>
-									</div>
-								</div>
-								
+				<div className={`classify`}>
+					<div className={`classify-box`}>
+						<Link to="/articleList"><div className={`classify-list`}>{intl.get('UPCOMING_EVENTS')}</div></Link>
+						<Link to="/articleListTwo"><div className={`classify-list active`}>{intl.get('CURRENT_EVENTS')}</div></Link>
+						<Link to="/articleListThree"><div className={`classify-list`}>{intl.get('ETM_SOUND')}</div></Link>
+					</div>
+				</div>
                 <div id="wrapper" className="article-wrapper">
                 { this.state.lists.map((item) =>
                     <div   key={item.id} className="article-item">
