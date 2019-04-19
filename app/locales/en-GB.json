@@ -105,8 +105,8 @@
     "CENTRA-DERIVED_CHAINS_CON2": "In order to solve the problem of rapid expansion and BaaS, En-Tan-Mo has designed a system of one central chain with multiple derivative chains. The central chain is responsible for network security and value transfer. A derivative chain is a special kind of blockchain targeted at specific DAPP. It is an independent and isolated system. By inheriting and replicating technologies from the central chain, each DAPP has its own ledger and token system. Its consensus mechanism, block parameter and transaction types can be customized. Derivative chains are parallel to each other.  They can achieve bidirectional transfer of assets between the central chain, other derivative chains, and external blockchain systems through the 'parallel chain interaction layer'. This enables users to utilize their existing assets to use the En-Tan-Mosystem.",
 
 	"UPCOMING_EVENTS": "Upcoming Events",
-	"CURRENT_EVENTS": "current events",
-	"ETM_SOUND": "ETM sound",
+	"CURRENT_EVENTS": "Current Events",
+	"ETM_SOUND": "ETM Sound",
 
     "PARALLEL_CHAIN": "Parallel chain interactive protocol",
     "PARALLEL_CHAIN_CON": "Value transfer using cross-chain technology bridge for blockchain expansions",

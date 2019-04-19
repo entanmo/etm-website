@@ -1,10 +1,38 @@
 export default {
-  'page12':{
-    id:'12',
-    path:'page12',
-    picName:'act12',
-    title:'2018中美经济学家金融科技创新论坛圆满结束,ETM区块链新技术成焦点',
-    time:'2018-08-28'
+  'page18':{
+    id:'18',
+    path:'page18',
+    picName:'act18',
+    title:'寒冬起舞 区块链项目En-Tan-Mo获2000万B轮融资',
+    time:'2019-01-01'
+  },
+  'page17':{
+    id:'17',
+    path:'page17',
+    picName:'act17',
+    title:'寒冬该如何取暖？— ETM在全球首届全球共识安全产业峰会',
+    time:'2018-12-16'
+  },
+  'page16':{
+    id:'16',
+    path:'page16',
+    picName:'act16',
+    title:'快上船！EnTanMo号即将起航！ETM成为第12届中国杯帆船赛官方合作伙伴',
+    time:'2018-11-09'
+  },
+  'page15':{
+    id:'15',
+    path:'page15',
+    picName:'act15',
+    title:'中国杯帆船赛|EnTanMo号激流勇进正扬帆，坐稳了，要加速了！',
+    time:'2018-11-08'
+  },
+  'page14':{
+    id:'14',
+    path:'page14',
+    picName:'act14',
+    title:'今天，马云的云锋基金来了，云锋基金来EnTanMo进行项目投资考察',
+    time:'2018-11-02'
   },
 	'page13':{
 	  id:'13',
@@ -13,39 +41,11 @@ export default {
 	  title:'ETM北美首场路演及项目发布会成功举行',
 	  time:'2018-08-29'
 	},
-	'page14':{
-	  id:'14',
-	  path:'page14',
-	  picName:'act14',
-	  title:'今天，马云的云锋基金来了，云锋基金来EnTanMo进行项目投资考察',
-	  time:'2018-11-02'
-	},
-	'page15':{
-	  id:'15',
-	  path:'page15',
-	  picName:'act15',
-	  title:'中国杯帆船赛|EnTanMo号激流勇进正扬帆，坐稳了，要加速了！',
-	  time:'2018-11-08'
-	},
-	'page16':{
-	  id:'16',
-	  path:'page16',
-	  picName:'act16',
-	  title:'快上船！EnTanMo号即将起航！ETM成为第12届中国杯帆船赛官方合作伙伴',
-	  time:'2018-11-09'
-	},
-	'page17':{
-	  id:'17',
-	  path:'page17',
-	  picName:'act17',
-	  title:'寒冬该如何取暖？— ETM在全球首届全球共识安全产业峰会',
-	  time:'2018-12-16'
-	},
-	'page18':{
-	  id:'18',
-	  path:'page18',
-	  picName:'act18',
-	  title:'寒冬起舞 区块链项目En-Tan-Mo获2000万B轮融资',
-	  time:'2019-01-01'
-	},
+  'page12':{
+    id:'12',
+    path:'page12',
+    picName:'act12',
+    title:'2018中美经济学家金融科技创新论坛圆满结束,ETM区块链新技术成焦点',
+    time:'2018-08-28'
+  },
 }

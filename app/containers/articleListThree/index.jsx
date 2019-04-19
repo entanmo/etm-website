@@ -65,7 +65,6 @@ class ArticleListThree extends React.Component {
             <div className={this.props.className}>
                 <Header history={this.props.history}  currentKey={this.currentKey}/>
                 <div className={`${this.props.className}-banner ${this.props.className}-banner-style1`}>
-                    <p className={`${this.props.className}-banner-title`}>{intl.get('ARTICLE-TITLE')}</p>
                     <p className={`${this.props.className}-banner-desc`}
                         style={{
                             maxWidth: '528px'
