@@ -169,6 +169,7 @@ class Header extends React.Component {
         );
     }
     getViewLang (){
+		console.log(global.select,'global.select头部')
         let n=0;
         for(let i=0;i<SUPPOER_LOCALES.length;i++){
             if(SUPPOER_LOCALES[i].value === global.select){

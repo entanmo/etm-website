@@ -1,4 +1,11 @@
 export default {
+  'page25':{
+    id:'25',
+    path:'page25',
+    picName:'act25',
+    title:'TA约你看《复联》 ，ETM全球有奖中文名征集活动等你“出名”',
+    time:'2019-04-24'
+  },
   'page1':{
     id:'1',
     path:'page1',
