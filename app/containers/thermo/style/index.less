@@ -1,0 +1,166 @@
+@import '../../../style/default.less';
+@thermo: thermo;
+.@{thermo} {
+    &-banner {
+        min-height: 100vh;
+        padding-top: @header-height;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .link-activity{
+          background-color: transparent;
+          margin-top: 20px;
+        }
+        .link-activity:hover{
+          background-color: transparent;
+          color: #40a9ff;
+        }
+        &-title {
+            color: #fff;
+            font-size: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 0.7px;
+        }
+        &-desc {
+            font-size: 24px;
+            letter-spacing: 0.7px;
+        }
+    }
+    &-main {
+        text-align: left;
+        background-color: #fff;
+        .main {
+            width: 100%;
+            background-color: #f8f7f7;
+            .main-des {
+                max-width: 1080px;
+                padding: 80px 15px;
+                margin: 0 auto;
+                h5 {
+                    color: #000000;
+                    font-size: 32px;
+                }
+                .main-text {
+                    font-size: 16px;
+                    line-height: 35px;
+                    color: #000000;
+                }
+                .main-text7 {
+                    font-weight: 600;
+                }
+            }
+            .main-set {
+                width: 100%;
+                background-color: #fff;
+                .set-list {
+                    max-width: 1080px;
+                    padding: 80px 15px;
+                    margin: 0 auto;
+                    h4 {
+                        font-size: 32px;
+                        color: #000;
+                    }
+                    .margin-title {
+                        margin-top: 20px;
+                    }
+                    .text {
+                        font-size: 16px;
+                        line-height: 35px;
+                        color: #000000;
+                    }
+                }
+            }
+            .act-way {
+                width: 100%;
+                background-color: #051d2d;
+                .act-in {
+                    max-width: 1080px;
+                    margin: 0 auto;
+                    padding: 97px 15px;
+                    .act-logo {
+                        height: 50px;
+                    }
+                    h4 {
+                        font-size: 32px;
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+                    .act-cooperation {
+                        margin-top: 0px;
+                    }
+                    .act-name {
+                        letter-spacing: 1.7px;
+                        font-size: 20px;
+                    }
+                    .argument {
+                        margin-top: 56px;
+                        margin-bottom: 45px;
+                    }
+                    .address,
+                    .time {
+                        font-size: 20px;
+                    }
+                    .address {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &-banner-style1 {
+        background-image: url('../image/miner-banner.jpg');
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .@{thermo} {
+        &-banner-title {
+            color: #fff;
+            font-size: 26px;
+            max-width: 293px;
+            text-indent: 23px;
+            margin-bottom: 20px;
+            letter-spacing: 0.7px;
+            text-align: center;
+        }
+        &-banner-desc {
+            font-size: 18px;
+            letter-spacing: 0.7px;
+        }
+    }
+    .goldenMiner-main .main .main-des h5{
+      font-size: 26px;
+
+    }
+    .set-list {
+        h4 {
+            font-size: 26px;
+        }
+    }
+    .act-way {
+        h4 {
+            font-size: 28px !important;
+        }
+        .act-name,
+        .time,
+        .address {
+            font-size: 18px !important;
+        }
+        .argument {
+            margin-top: 60px !important;
+            margin-bottom: 30px !important;
+        }
+        img {
+            width: 70%;
+        }
+        .iconImg {
+            img {
+                width: 90%;
+            }
+        }
+    }
+}

@@ -1,10 +1,9 @@
 {
-  "name": "test-demo",
+  "name": "ETM",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set NODE_ENV=dev && webpack-dev-server --progress --colors",
     "build": "set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress --colors"
   },
@@ -25,7 +24,7 @@
     "html-webpack-plugin": "^2.22.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    "marked": "^0.5.2",
+    "marked": "^0.7.0",
     "open-browser-webpack-plugin": "0.0.5",
     "postcss-loader": "^0.11.0",
     "react-transform-hmr": "^1.0.4",

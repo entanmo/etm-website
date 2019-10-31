@@ -1,0 +1,27 @@
+.consensus-banner {
+  height: 444px;
+  padding-top: 60px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.consensus-banner-title {
+  color: #ff2717;
+  font-size: 36px;
+}
+.consensus-banner-desc {
+  font-size: 16px;
+}
+.consensus-main {
+  text-align: left;
+}
+.consensus-banner-style1 {
+  background-image: url('../image/banner-bg1.png');
+}
+.consensus-banner-style2 {
+  background-image: url('../image/banner-bg2.png');
+}

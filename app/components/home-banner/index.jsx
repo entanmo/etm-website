@@ -64,6 +64,7 @@ class Banner extends React.Component {
                         <p className={`${clsName}-text1`}>{intl.get('VALUE_SHARE')}</p>
                         <div className='link-btn'>
                             <Button size='large' onClick={this.onClickBtn}>{intl.get('DOWNLOAD')}</Button>
+                            <Button size='large' onClick={this.onClickBtntwo}>{intl.get('INTERPRET')}</Button>
                             {/* <Button className='link-activity' size='large'  >
                                 <Link style={{color:'rgba(255, 255, 255, 0.8)'}} to='/activity'> {intl.get('ACTIVITY')}</Link>                           
                             </Button> */}
@@ -77,6 +78,10 @@ class Banner extends React.Component {
 
     onClickBtn() {
         var pdfTemp = ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.select);
+        window.open(pdfTemp);
+    }
+    onClickBtntwo() {
+        var pdfTemp = ((lang)=>{return '../../docs/ETM interpretation_Science_'+lang+'.pdf'})(global.select);
         window.open(pdfTemp);
     }
 }

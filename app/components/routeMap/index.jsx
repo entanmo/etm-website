@@ -18,7 +18,6 @@ class RouteMap extends React.Component{
           <img className='img-responsive' src={((lang_change)=>{return require('./image/phone-map_'+lang_change+'.png')})(global.lang_change)} alt=""/>
         </div>
       </div>
-
     )
   }
 }

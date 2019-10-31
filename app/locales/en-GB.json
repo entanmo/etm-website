@@ -1,13 +1,18 @@
 {
     "VALUE_SHARE": "Agreed value Shared benefit",
-    "DOWNLOAD": "Download ETM Science",
+    "DOWNLOAD": "White Paper",
+    "INTERPRET": "Yellow Paper",
     "ACTIVITY": "ETM in Silicon Valley",
     "UNDERSTAND": "Introduction",
     "CONSENSUS": "Consensus",
     "ECOSYSTEM": "Ecosystem",
     "MOORE_ECONOMICS": "Economics",
-    "DOCUMENTS": "Documents",
+    "DEVELOPER": "Developer",
     "NEWS": "News",
+    "APPLY": "Apply",
+    "WALLET": "Wallet",
+    "EXPLORER": "ETM Blockchain Explorer",
+    "DOCUMENTS": "Documents",
 
     "INTRODUCTION": "ETM introduction",
     "INTRODUCTION_CON": "High-Performance, Equilibrium, Interconnection, Openness, Security.",
@@ -103,6 +108,11 @@
     "CENTRA-DERIVED_CHAINS_CON1": "Among the many problems faced by blockchain systems, the lack of interoperability between blockchains greatly limits the application potential. For both public and private chains the key to achieving value transfer is through inter-chain technologies. These technologies can build bridges to connect and expand previously isolated blockchain systems. What they can achieve is more value lock-in rather than more value transfer. Based on investigations of current interchain technologies, En-Tan-Mo proposes a new parallel chain interactive protocol to facilitate value transfer and build a blockchain ecosystem that can include apps each with over ten millions users.",
     "CENTRA-DERIVED_CHAINS_CON2": "In order to solve the problem of rapid expansion and BaaS, En-Tan-Mo has designed a system of one central chain with multiple derivative chains. The central chain is responsible for network security and value transfer. A derivative chain is a special kind of blockchain targeted at specific DAPP. It is an independent and isolated system. By inheriting and replicating technologies from the central chain, each DAPP has its own ledger and token system. Its consensus mechanism, block parameter and transaction types can be customized. Derivative chains are parallel to each other.  They can achieve bidirectional transfer of assets between the central chain, other derivative chains, and external blockchain systems through the 'parallel chain interaction layer'. This enables users to utilize their existing assets to use the En-Tan-Mosystem.",
 
+    "UPCOMING_EVENTS": "Upcoming Events",
+    "CURRENT_EVENTS": "Current Events",
+    "ETM_SOUND": "ETM Sound",
+    "ETM_FORUM": "ETM Forum",
+
     "PARALLEL_CHAIN": "Parallel chain interactive protocol",
     "PARALLEL_CHAIN_CON": "Value transfer using cross-chain technology bridge for blockchain expansions",
     "PARALLEL_CHAIN_CON1":"En-Tan-Mo’s parallel chain interaction protocol makes it possible to support value transfer between different blockchains. It mainly consists of two parts: a chain-adaptation module and a value exchange smart contract. The main purpose of designing a chain adapter is to provide En-Tan-Mo interaction interfaces with different chains for value exchange smart contracts in order to verify transactions on different chains. Simultaneously, builders in the community can themselves develop and improve on chain adaptors for diversified functions and obtain tokens as rewards. For example, applications can switch between underlying blockchains with different protocols using chain adaptors. Value exchange protocol is the core of parallel interaction protocols.  It enables users to exchange capital on and between all kinds of blockchains, including central, derivative and external chains. An internet system of interchain value connection will be thus constructed. ",
@@ -136,7 +146,7 @@
     "JOIN_ECONOMY": "Join En-Tan-Mo economy",
     "MOORE_ECONOMICS_CON": "Tokens are the only measure of transferable value and are the medium of circulation in the En-Tan-Mo ecosystem. The unit of warrants is ETM, and its official name is “Molecoin”. There are 500 million ETM tokens and they will be distributed within 6 years. After that, the increase ratio will be determined by votes from all En-Tan-Mo participants and the additional coins will be used as rewards for miners and tribunals.",
     "ETM_PRIVATE_EQUITY": "ETM Distribution and Additional Issuance",
-    "ETM_PRIVATE_EQUITY_CON": "The total supply of ETM is capped at 500 million and will not involve ICO(Initial Coin Offering). The distribution plan is as follows:30% of the initial supply will be created to the En-Tan-Mo private placement to fund technical development and market operations.10% will go to En-Tan-Mo Foundation for the purpose of supporting the building of miner, developer and investor community ecology plus rewarding DPoS tribunals for their voting efforts.48% will be created to PoW miners. The issuance is expected to be completed by the sixth year after the official release of ETM project. New ETM created per year will steadily decline and the share is 12%, 10%,8%,8%,6%,4% respectively.Development team and early contributors will obtain 12% of the ETM supply and there will be a lock-in period after the main chain is released online.In the future, some ETM will be lost due to varied reasons. And as the project continues to develop, on-blockchain Dapp will proliferate and thrive, injecting fresh vitality into the network and bringing about benefits. For this reasons, a DPoS-based voting will decide on the rate of additional issuance on a yearly basis, starting from the seventh year. The new issuance will not exceed 5% of the current total and go to the reward for PoW miners,DPoS voters and quality Dapps.",
+    "ETM_PRIVATE_EQUITY_CON": "The total supply of ETM is capped at 500 million and will not involve ICO(Initial Coin Offering). The distribution plan is as follows:14% of the initial supply will be created to the En-Tan-Mo private placement to fund technical development and market operations.18% will go to En-Tan-Mo Foundation for the purpose of supporting the building of miner, developer and investor community ecology plus rewarding DPoS tribunals for their voting efforts.48% will be created to PoW miners. The issuance is expected to be completed by the sixth year after the official release of ETM project. New ETM created per year will steadily decline and the share is 12%, 10%,8%,8%,6%,4% respectively.Development team and early contributors will obtain 10% of the ETM supply and there will be a lock-in period after the main chain is released online.In the future, some ETM will be lost due to varied reasons. And as the project continues to develop, on-blockchain Dapp will proliferate and thrive, injecting fresh vitality into the network and bringing about benefits. For this reasons, a DPoS-based voting will decide on the rate of additional issuance on a yearly basis, starting from the seventh year. The new issuance will not exceed 5% of the current total and go to the reward for PoW miners,DPoS voters and quality Dapps.",
     "ETM_FOUNDATION": "ETM Private Placement",
     "ETM_FOUNDATION_CON": "ETM from private placement will mainly be invested in building platform and community ecology and supporting platform operation. Such ETM equals 30% of the total supply and will be released on Ethereum in line with the ERC-20 rules. Once En-Tan-Mo goes online, all the privately raised ETM will be mapped to the platform’s central chain in the proportion of 1:1 to create the same number of tokens on En-Tan-Mo blockchain. ETM private placement consists of three rounds, each releasing 10% of ETM, with a celling of 15000, 22500 and 30000 ethers respectively.",
     "POW_MINERS": "En-Tan-Mo Foundation",
@@ -225,9 +235,76 @@
     "MINER-FOOT02-PAR03":"E-mail：service@entanmo.com",
 
     "ROAD-MAP":"Road Map",
-
     "ARTICLE-TITLE":"ETM News",
-    "ARTICLE-DES":"ETM Blockchain Science"
+    "ARTICLE-DES":"ETM Academy of Sciences",
 
 
+    "JUMPSTARTB-TITLE":"Breakimg News!ETM ETM Will Be the Third Token Sale on OK Jumpstart",
+    "JUMPSTARTB-DES":"Subscription and Trading Will Be Available from June 10",
+    "JUMPSTARTB-BTN":"Instant View",
+    "JUMPSTARTB-PARAGRAPH1":"6月4日，OK交易所通过官方渠道发布了《关于OK Jumpstart三期项目En-Tan-Mo（ETM）销售规则》，En-Tan-Mo（ETM）有幸成为OK Jumpstart三期项目。",
+    "JUMPSTARTB-PARAGRAPH2":"该公告显示：OK Jumpstart将于香港时间6月10日进行En-Tan-Mo（ETM）的预约中签销售，其中第一轮销售时间为6月10日12：00（HKT），第二轮销售时间为6月10日13：00（HKT），并于6月10日15：00上线ETM/USDT、ETM/USDK交易。",
+
+    "JUMPSTARTB-DES01-PAR00":"The full text of the announcement is as follows:",
+    "JUMPSTARTB-DES01-PAR01":"OK Jumpstart x En-Tan-Mo (ETM) Token Sale Details",
+    "JUMPSTARTB-DES01-PAR02":"Dear valued customers,",
+    "JUMPSTARTB-DES01-PAR03":"We are pleased to announce that En-Tan-Mo will be the project of our third token sale on OK Jumpstart, and will be launched on June 10, 2019 (CEST, UTC+2). The first subscription session will open at 06:00 (CEST, UTC+2), and the second session will open at 07:00 (CEST, UTC+2). The rules are as follows:",
+    "JUMPSTARTB-DES01-PAR04":"1.Subscription Details",
+    "JUMPSTARTB-DES01-PAR05":"Sale Price: 1ETM = $0.1",
+    "JUMPSTARTB-DES01-PAR06":"Exchange Rate: to be confirmed by the OKB price on launch day",
+    "JUMPSTARTB-DES01-PAR07":"Individual Minimum Subscription Amount = 5,000 ETM",
+    "JUMPSTARTB-DES01-PAR08":"Individual Cap: 40,000 ETM",
+    "JUMPSTARTB-DES01-PAR09":"First Subscription Session Supply: 12,500,000 ETM (over-subscription limit: 25,000,000 ETM)",
+    "JUMPSTARTB-DES01-PAR10":"Second Subscription Session Supply: 12,500,000 ETM (over-subscription limit: N/A)",
+    "JUMPSTARTB-DES01-PAR11":"For the details of the token sale rules, please see Enhancement of OK Jumpstart Token Sale Rules",
+    "JUMPSTARTB-DES01-PAR12":"2.Points to Note",
+    "JUMPSTARTB-DES01-PAR13":"Please log in and prepare your OKB before the sale to secure your subscription.",
+    "JUMPSTARTB-DES01-PAR14":"To ensure the subscription process is fair and secure, the verification code is not required for subscription. Do NOT use the verification endpoint before the subscription begins, such action is regarded as rules violation and the account will be banned from the subscription.",
+    "JUMPSTARTB-DES01-PAR15":"You are recommended to transfer your OKB to your OKEx Asset Account in advance for the subscription.",
+    "JUMPSTARTB-DES01-PAR16":"The subscription is available on both OKEx.com and the OKEx Mobile App.",
+    "JUMPSTARTB-DES01-PAR17":"Users with an allotment coefficient of 0 are not eligible for the subscription.",
+    "JUMPSTARTB-DES01-PAR18":"3.Listing",
+    "JUMPSTARTB-DES01-PAR19":"ETM/USDT Market: 11:00 June 10, 2019 (CEST, UTC+2) . ETM/USDK Market: 11:00 June 10, 2019 (CEST, UTC+2)",
+    "JUMPSTARTB-DES01-PAR20":"4.About En-Tan-Mo",
+    "JUMPSTARTB-DES01-PAR21":"En-Tan-Mo, the first 3.0 blockchain project to propose and implement the SHD completeness.",
+    "JUMPSTARTB-DES01-PAR22":"Based on Nash Equilibrium and the idea of value transfer, Nobel Laureate in Economics - Professor Thomas Sargent, Nobel Laureate in Physics - Professor Sheldon Lee Glashow lead experts from various fields in the California Institute of Technology and more renowned academy institutions, to integrate the revolutionary research results of game theory into the blockchain, creating the En-Tan-Mo project with SHD completeness.",
+    "JUMPSTARTB-DES01-PAR23":"En-Tan-Mo is not only the underlying blockchain platform with the closest implementation of Nash Equilibrium, but also a blockchain operating system capable of supporting hundreds of millions of users. It is a next-generation internet platform opens up the ecosystem of finance, energy, commerce, and daily life.",
+    "JUMPSTARTB-DES01-PAR24":"More Details: <About En-Tan-Mo (ETM)- Third Project of OK Jumpstart>",
+    "JUMPSTARTB-DES01-PAR25":"Risk Warning: ",
+    "JUMPSTARTB-DES01-PAR26":"Trading digital assets involves significant risk and can result in the loss of your invested capital. You should ensure that you fully understand the risk involved and take into consideration your level of experience, investment objectives and seek independent financial advice if necessary.",
+    "JUMPSTARTB-DES01-PAR27":"June 4, 2019",
+    "JUMPSTARTB-DES01-PAR28":"Detailed Sales Rules to View Official Links：",
+    
+    
+    "THERMO-TITLE":"币圈掀起ETM热？",
+    "THERMO-DES":"区块链媒体争相报道ETM",
+    "THERMO-BTN":"立即查看",
+
+
+    "THERMO-DES01-PAR00":"近日，币圈掀起一股追捧ETM热潮，关于ETM的新闻和深度报道频频登上区块链多家媒体的头条。",
+    "THERMO-DES01-PAR01":"5月22日，区块链头部媒体星球日报在网页头条发布文章《两位诺奖得主加持、解决“不可能三角”的UPoS机制来了》（点击可查看原文），文章深度剖析了En-Tan-Mo科学院UPoS机制、两位诺奖与ETM的理念的契合，以及创始团队对中本聪精神的追随，将ETM的理念、内涵、团队文化诠释得淋漓尽致，为大众认识ETM打开了一扇窗。",
+    "THERMO-DES01-PAR02":"本次为En-Tan-Mo首次亮相，受到了星球日报大力推荐，引起了圈内人群的广泛关注和热烈讨论。圈内二十余家媒体第一时间转载了相关文章，多个区块链浏览器迅速收录了ETM作为底层公链的信息并给予公开，多名大咖纷纷在文章底部留言称赞，ETM一时间传遍区块链领域。",
+    "THERMO-DES01-PAR03":"随后的5月24日，星球日报微信公众号头条深度文章《Staking 时代两大流派，屌丝和贵族谁将胜出？》（点击可查看原文）中，再次提到ETM，认为ETM是PoS/Staking经济中大众派的代表之一。",
+    "THERMO-DES01-PAR04":"文章从宏观的角度分析了目前PoS/Staking 项目两大派的不同之处，以EOS 和 Tron 为代表的 DPoS机制走上了中心化之路，而Cosmos 和ETM等项目则更多强调平等和普通用户参与。文章引用ETM创始人Aaron的原话：“去中心化才是区块链最本质的特征、发展趋势所在。”揭示了以ETM的Staking为代表的去中心化项目的本质和初心。此次，ETM首次与明星项目EOS及Cosmos 等一同被提及，体现了ETM在共识机制上的创新性和独特性，再次证明了ETM技术实力过硬，设计理论超前。",
+    "THERMO-DES01-PAR05":"5月31日，区块律动微信公众号深度原创文章《现在还有公平挖矿的机会吗？》（点击可查看原文）再次提及ETM。文章通过对比PoW、PoS机制，认为混合机制更具公平性，并对最近关注到的ETM进行详细分析，发现ETM从投票机制到矿工出块，再到抑制寡头垄断都体现了公平、安全、去中心化三者的兼容，“寡头垄断的效应在 ETM 上几乎会被消除，安全的随机算法贯穿整个生态，未被选中的矿工同样可以获得奖励，En-Tan-Mo 在每一步都保证了网络致力于打造的公平氛围。”",
+    "THERMO-DES01-PAR06":"6月2日，区块链知名自媒体链捕手关注到ETM后，对ETM做了深度剖析，文章《专访ETM团队：“四区”的正循环是公链崛起的必经之路 |链捕手》（点击可查看原文）通过专访形式对ETM整个项目、技术、生态、团队做了全方位的报道，让受众对ETM有了更深一步的了解。",
+    "THERMO-DES01-PAR07":"6月4日，ETM将于6月10日上线OK Jumpstart三期的消息一出，几十家区块链媒体自发发布相关快讯消息，《OK Jumpstart三期项目6月10日开启销售》的消息被区块链媒体刷屏；当日，由星球日报发布的《6天后开抢，一文看懂OK最新IEO项目En-Tan-Mo》（点击可查看原文）的新闻再次被币圈多家媒体转发，引发一波追捧ETM热潮。",
+    "THERMO-DES01-PAR08":"短短两周时间，ETM被深度曝光5次，相关文章被转载上百次，转发上千次，阅读超过10万人次，覆盖了币圈主流人群。ETM的UPoS共识机制、诺奖得主加持团队、去中心化理念等一经报道便引起强烈反响，大家对ETM作为真正的区块链技术驱动公链充满憧憬，ETM也将不负众望，砥砺前行，提供更好的技术和服务。",
+    
+    
+    "YELLOWBOOK-TITLE":"En-Tan-Mo Officially Released The Project Yellow Paper",
+    "YELLOWBOOK-DES":"",
+    
+    "YELLOWBOOK-DES01-PAR00":"En-Tan-Mo (ETM), a bottom public chain released its project yellow paper officially on June 14.  Having been polished by the ETM Academy for six months, the yellow paper interprets the theoretical basis and technology of ETM from both science and technology aspects. And it combines them with the spirit of Satoshi Nakamoto.",
+    "YELLOWBOOK-DES01-PAR01":"The Scientific Interpretation part is subjected as Information, Entropy and Equilibrium: a mathematical physics perspective of blockchain. This dissertation is divided into three chapters.  It demonstrates the essential role played by theories of entropy, equilibrium, optimization, and mean field in our blockchain system. ",
+    "YELLOWBOOK-DES01-PAR02":"While the Technical Interpretation part focuses on the multi-angle technical architecture of DApp development, UPoS consensus mechanism, voting, optimization and dividend mechanism. Thus it explains the technical design of ETM and the specific implementation path. ",
+    "YELLOWBOOK-DES01-PAR03":"",
+    "YELLOWBOOK-DES01-PAR04":"",
+    "YELLOWBOOK-DES01-PAR05":"",
+    "YELLOWBOOK-DES01-PAR06":"",
+    "YELLOWBOOK-DES01-PAR07":"",
+    "YELLOWBOOK-DES01-PAR08":"",
+    "YELLOWBOOK-DES01-PAR09":"",
+    "YELLOWBOOK-DES01-PAR10":""
+    
 }

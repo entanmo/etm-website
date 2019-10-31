@@ -37,19 +37,25 @@ const SUPPOER_LOCALES = [
 class Header extends React.Component {
     constructor(props, context) {
         super(props, context);
-
         this.state = {
             mediaQuery: false,
             collapse: true,
-            reload:false
+            reload:false,
+			btnStatus: true,
         };
 
         let selectedKey = this.props.currentKey;
-
         this.selectedKeys = [];
         if (selectedKey) {
             this.selectedKeys = [selectedKey];
         }
+		
+		//判断语言改变资讯板块
+		// let longs = global.select
+		// if(longs == 'en-GB'){
+		// 	this.state.btnStatus = false;
+		// }
+		
     }
 
     onMediaQuery() {
@@ -106,8 +112,8 @@ class Header extends React.Component {
                 collapseStyle = this.props.className + '-collapseShow';
             }
         }
-
-        // console.log(`selectedKeys: ${this.selectedKeys}`);
+		
+		 // console.log(`selectedKeys: ${this.selectedKeys}`);
         return (
             <div className={this.props.className}>
                 <div className='flex container'>
@@ -146,8 +152,21 @@ class Header extends React.Component {
                                     <Menu.Item key='ecosystem-5'>{intl.get('MILL_MALL')}</Menu.Item>
                                 </Menu.SubMenu>
                                 <Menu.Item key='moore'>{intl.get('MOORE_ECONOMICS')}</Menu.Item>
-                                <Menu.Item key='documents' >{intl.get('DOCUMENTS')}</Menu.Item>
-                                <Menu.Item key='news' >{intl.get('NEWS')}</Menu.Item>
+                                <Menu.Item key='developer'>{intl.get('DEVELOPER')}</Menu.Item>
+                                <Menu.SubMenu title={intl.get('NEWS')}>
+                                    {this.state.btnStatus ? < Menu.Item key='news-1'>{intl.get('UPCOMING_EVENTS')}</Menu.Item> : '' }
+                                    <Menu.Item key='news-2'>{intl.get('CURRENT_EVENTS')}</Menu.Item>
+                                    <Menu.Item key='news-3'>{intl.get('ETM_SOUND')}</Menu.Item>
+                                    <Menu.Item key='news-4'>{intl.get('ETM_FORUM')}</Menu.Item>
+                                </Menu.SubMenu>
+                                <Menu.SubMenu title={intl.get('APPLY')}>
+                                    <Menu.Item key='apply-1'>{intl.get('WALLET')}</Menu.Item>
+                                	  <Menu.Item key='apply-2'>{intl.get('EXPLORER')}</Menu.Item>
+                                </Menu.SubMenu>
+                                <Menu.SubMenu title={intl.get('DOCUMENTS')}>
+                                    <Menu.Item key='documentsone'>{intl.get('DOWNLOAD')}</Menu.Item>
+                                	  <Menu.Item key='documentstwo'>{intl.get('INTERPRET')}</Menu.Item>
+                                </Menu.SubMenu>
                                 <Menu.SubMenu className='lang-select' title={this.getViewLang()}>
                                     <Menu.Item key='lang-1'>{SUPPOER_LOCALES[0].name}</Menu.Item>
                                     <Menu.Item key='lang-2'>{SUPPOER_LOCALES[1].name}</Menu.Item>
@@ -212,6 +231,7 @@ class Header extends React.Component {
         // console.log('current: ', this.selectedKeys);
     }
     onMenuItemClick(event) {
+		var that = this
         console.log(this.props)
         switch (event.key) {
             case 'knownledge-1': {
@@ -267,18 +287,46 @@ class Header extends React.Component {
                 this.props.history.pushState(null, 'moore');
                 break;
             }
-            case 'news' : {
+            case 'developer' : {
+              window.open('http://developer.entanmo.com')
+              break;
+            }
+            case 'news-1' : {
               this.props.history.pushState(null, 'articleList');
+              break;
+            }
+            case 'news-2' : {
+              this.props.history.pushState(null, 'articleListTwo');
+              break;
+            }
+            case 'news-3' : {
+              this.props.history.pushState(null, 'articleListThree');
+              break;
+            }
+            case 'news-4' : {
+              window.open('http://forum.entanmo.io/')
               break;
             }
             case 'timeTower' : {
               this.props.history.pushState(null, 'timeTower');
               break;
             }
-            case 'documents': {
+            case 'apply-1' : {
+              window.open('https://wallet.entanmo.com')
+              break;
+            }
+            case 'apply-2' : {
+              window.open('http://explorer.entanmo.io')
+              break;
+            }
+            case 'documentsone': {
                 var pdfTemp =  ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.select);
                 window.open(pdfTemp);
-                document.getElementsByClassName("ant-menu-item").r
+                break;
+            }
+            case 'documentstwo': {
+                var pdfTemp =  ((lang)=>{return '../../docs/ETM interpretation_Science_'+lang+'.pdf'})(global.select);
+                window.open(pdfTemp);
                 break;
             }
             case 'lang-1': {

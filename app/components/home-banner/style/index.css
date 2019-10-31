@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     */
-  min-height: 100vh;
+  min-height: 115vh;
   position: relative;
   z-index: 1025;
   top: 0;
@@ -24,3 +24,5 @@
   top: 0;
   position: absolute;
 }
+
+.link-btn Button{margin: 5px 20px;}

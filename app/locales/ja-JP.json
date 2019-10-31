@@ -1,13 +1,18 @@
 {
     "VALUE_SHARE": "コンセンサスが価値を伝達",
-    "DOWNLOAD": "ダンロード",
+    "DOWNLOAD": "白皮書",
+    "INTERPRET": "黄皮書",
     "ACTIVITY": "シリコンバレーの旅",
     "UNDERSTAND": "ETMについて",
     "CONSENSUS": "ETMコンセンサス",
     "ECOSYSTEM": "ETMエコシステム",
     "MOORE_ECONOMICS": "ムーア経済",
+    "DEVELOPER": "開発者",
+    "NEWS": "ニュース",
+    "APPLY": "適用",
+    "WALLET": "財布",
+    "EXPLORER": "ブロックブラウザ",
     "DOCUMENTS": "ドキュメント",
-    "NEWS": "News",
 
     "INTRODUCTION": "ETMについて",
     "INTRODUCTION_CON": "高効率、平衡、インターワーキング、オープン、安全、科学的に論証されたブロックチェーン３.0プラットフォーム。",
@@ -103,6 +108,11 @@
     "CENTRA-DERIVED_CHAINS_CON": "百万人以上のユーザーが使用できるTPSの分散型アプリケーションはブロックチェーン全体を相互に接続させる",
     "CENTRA-DERIVED_CHAINS_CON1": "ブロックチェーンが直面する多くの問題の中に、ブロックチェーン間の相互運用性はブロックチェーンのアプリケーションスペースを大きく制限する。パブリックチェーンやプライベートチェーンに関しては、クロスチェーン技術が価値伝達を実現するキーである。分散した島々からブロックチェーンを回収することは、ブロックチェーンの拡張と接続の架け橋である。既存のクロスチェーン技術は主にサイドチェーンを中心に、実際に価値伝達ではなくバリューロックのみを実現している。そのため、En-Tan-Moは、既存のクロスチェーン技術を研究した後、チェーンとチェーンの間の価値伝達を実現するパラレルチェーンの相互作用プロトコルを提案し、チェーンとチェーンとの間における価値伝達を完璧に実現し、それによって千万以上のユーザーがあるブロックチェーンエコシステムを構築する。",
     "CENTRA-DERIVED_CHAINS_CON2": "ブロックチェーンの急速な拡大とサービス（BaaS）としてのブロックチェーンの問題を解決するために、En-Tan-Moは中央チェーンに加えて複数の派生チェーンの設計を採用し、中央チェーンがネットワークセキュリティと価値交換を担当する。派生チェーンは特殊なブロックチェーンの一種で、各派生チェーンは一つのDAPPに対応している。DAPPは独立したシステムであり、メインチェーンの強力なブロックテクノロジを継承して再利用することによって、各アプリケーションには個人化の帳簿があり、個人のトークンがあり、そのコンセンサスメカニズム、ブロックパラメータ、およびトランザクションタイプの全てがカスタマイズされることができる。各派生チェーンには平行な関係がある。すなわち、一つの派生チェーンともう一つの派生チェーンは互いに平行している。それらは中央チェーンの「パラレルチェーンインタラクションレイヤー」を介して、それと中央チェーン、他の派生チェーン、および外部ブロックチェーンとの間に資産を双方向に転送することができる。そこで、ユーザーが既存の資産を使ってEn-Tan-Moシステムを利用することができる。",
+
+    "UPCOMING_EVENTS": "イベント発表",
+    "CURRENT_EVENTS": "ニュース",
+    "ETM_SOUND": "ETMサウンド",
+    "ETM_FORUM": "ETMフォーラム",
 
     "PARALLEL_CHAIN": "平行チェーンインタラクティブプロトコル",
     "PARALLEL_CHAIN_CON": "クロスチェーンテクノロジを利用した価値伝達ブロックチェーン拡張と接続を実現する架け橋",
@@ -232,6 +242,77 @@
     "MINER-FOOT02-PAR03":"E-mail：service@entanmo.com",
 
     "ROAD-MAP":"Road Map",
-    "ARTICLE-TITLE":"ETM News",
-    "ARTICLE-DES":"ETM Blockchain Science"
+    "ARTICLE-TITLE":"ETM ニュース",
+    "ARTICLE-DES":"ETM 科学アカデミー",
+    
+    
+    
+    
+    "JUMPSTARTB-TITLE":"Breakimg News!ETM ETM Will Be the Third Token Sale on OK Jumpstart",
+    "JUMPSTARTB-DES":"Subscription and Trading Will Be Available from June 10",
+    "JUMPSTARTB-BTN":"Instant View",
+    "JUMPSTARTB-PARAGRAPH1":"6月4日，OK交易所通过官方渠道发布了《关于OK Jumpstart三期项目En-Tan-Mo（ETM）销售规则》，En-Tan-Mo（ETM）有幸成为OK Jumpstart三期项目。",
+    "JUMPSTARTB-PARAGRAPH2":"该公告显示：OK Jumpstart将于香港时间6月10日进行En-Tan-Mo（ETM）的预约中签销售，其中第一轮销售时间为6月10日12：00（HKT），第二轮销售时间为6月10日13：00（HKT），并于6月10日15：00上线ETM/USDT、ETM/USDK交易。",
+    
+    "JUMPSTARTB-DES01-PAR00":"The full text of the announcement is as follows:",
+    "JUMPSTARTB-DES01-PAR01":"OK Jumpstart x En-Tan-Mo (ETM) Token Sale Details",
+    "JUMPSTARTB-DES01-PAR02":"Dear valued customers,",
+    "JUMPSTARTB-DES01-PAR03":"We are pleased to announce that En-Tan-Mo will be the project of our third token sale on OK Jumpstart, and will be launched on June 10, 2019 (CEST, UTC+2). The first subscription session will open at 06:00 (CEST, UTC+2), and the second session will open at 07:00 (CEST, UTC+2). The rules are as follows:",
+    "JUMPSTARTB-DES01-PAR04":"1.Subscription Details",
+    "JUMPSTARTB-DES01-PAR05":"Sale Price: 1ETM = $0.1",
+    "JUMPSTARTB-DES01-PAR06":"Exchange Rate: to be confirmed by the OKB price on launch day",
+    "JUMPSTARTB-DES01-PAR07":"Individual Minimum Subscription Amount = 5,000 ETM",
+    "JUMPSTARTB-DES01-PAR08":"Individual Cap: 40,000 ETM",
+    "JUMPSTARTB-DES01-PAR09":"First Subscription Session Supply: 12,500,000 ETM (over-subscription limit: 25,000,000 ETM)",
+    "JUMPSTARTB-DES01-PAR10":"Second Subscription Session Supply: 12,500,000 ETM (over-subscription limit: N/A)",
+    "JUMPSTARTB-DES01-PAR11":"For the details of the token sale rules, please see Enhancement of OK Jumpstart Token Sale Rules",
+    "JUMPSTARTB-DES01-PAR12":"2.Points to Note",
+    "JUMPSTARTB-DES01-PAR13":"Please log in and prepare your OKB before the sale to secure your subscription.",
+    "JUMPSTARTB-DES01-PAR14":"To ensure the subscription process is fair and secure, the verification code is not required for subscription. Do NOT use the verification endpoint before the subscription begins, such action is regarded as rules violation and the account will be banned from the subscription.",
+    "JUMPSTARTB-DES01-PAR15":"You are recommended to transfer your OKB to your OKEx Asset Account in advance for the subscription.",
+    "JUMPSTARTB-DES01-PAR16":"The subscription is available on both OKEx.com and the OKEx Mobile App.",
+    "JUMPSTARTB-DES01-PAR17":"Users with an allotment coefficient of 0 are not eligible for the subscription.",
+    "JUMPSTARTB-DES01-PAR18":"3.Listing",
+    "JUMPSTARTB-DES01-PAR19":"ETM/USDT Market: 11:00 June 10, 2019 (CEST, UTC+2) . ETM/USDK Market: 11:00 June 10, 2019 (CEST, UTC+2)",
+    "JUMPSTARTB-DES01-PAR20":"4.About En-Tan-Mo",
+    "JUMPSTARTB-DES01-PAR21":"En-Tan-Mo, the first 3.0 blockchain project to propose and implement the SHD completeness.",
+    "JUMPSTARTB-DES01-PAR22":"Based on Nash Equilibrium and the idea of value transfer, Nobel Laureate in Economics - Professor Thomas Sargent, Nobel Laureate in Physics - Professor Sheldon Lee Glashow lead experts from various fields in the California Institute of Technology and more renowned academy institutions, to integrate the revolutionary research results of game theory into the blockchain, creating the En-Tan-Mo project with SHD completeness.",
+    "JUMPSTARTB-DES01-PAR23":"En-Tan-Mo is not only the underlying blockchain platform with the closest implementation of Nash Equilibrium, but also a blockchain operating system capable of supporting hundreds of millions of users. It is a next-generation internet platform opens up the ecosystem of finance, energy, commerce, and daily life.",
+    "JUMPSTARTB-DES01-PAR24":"More Details: <About En-Tan-Mo (ETM)- Third Project of OK Jumpstart>",
+    "JUMPSTARTB-DES01-PAR25":"Risk Warning: ",
+    "JUMPSTARTB-DES01-PAR26":"Trading digital assets involves significant risk and can result in the loss of your invested capital. You should ensure that you fully understand the risk involved and take into consideration your level of experience, investment objectives and seek independent financial advice if necessary.",
+    "JUMPSTARTB-DES01-PAR27":"June 4, 2019",
+    "JUMPSTARTB-DES01-PAR28":"Detailed Sales Rules to View Official Links：",
+    
+    
+    "THERMO-TITLE":"币圈掀起ETM热？",
+    "THERMO-DES":"区块链媒体争相报道ETM",
+    "THERMO-BTN":"立即查看",
+    
+    
+    "THERMO-DES01-PAR00":"近日，币圈掀起一股追捧ETM热潮，关于ETM的新闻和深度报道频频登上区块链多家媒体的头条。",
+    "THERMO-DES01-PAR01":"5月22日，区块链头部媒体星球日报在网页头条发布文章《两位诺奖得主加持、解决“不可能三角”的UPoS机制来了》（点击可查看原文），文章深度剖析了En-Tan-Mo科学院UPoS机制、两位诺奖与ETM的理念的契合，以及创始团队对中本聪精神的追随，将ETM的理念、内涵、团队文化诠释得淋漓尽致，为大众认识ETM打开了一扇窗。",
+    "THERMO-DES01-PAR02":"本次为En-Tan-Mo首次亮相，受到了星球日报大力推荐，引起了圈内人群的广泛关注和热烈讨论。圈内二十余家媒体第一时间转载了相关文章，多个区块链浏览器迅速收录了ETM作为底层公链的信息并给予公开，多名大咖纷纷在文章底部留言称赞，ETM一时间传遍区块链领域。",
+    "THERMO-DES01-PAR03":"随后的5月24日，星球日报微信公众号头条深度文章《Staking 时代两大流派，屌丝和贵族谁将胜出？》（点击可查看原文）中，再次提到ETM，认为ETM是PoS/Staking经济中大众派的代表之一。",
+    "THERMO-DES01-PAR04":"文章从宏观的角度分析了目前PoS/Staking 项目两大派的不同之处，以EOS 和 Tron 为代表的 DPoS机制走上了中心化之路，而Cosmos 和ETM等项目则更多强调平等和普通用户参与。文章引用ETM创始人Aaron的原话：“去中心化才是区块链最本质的特征、发展趋势所在。”揭示了以ETM的Staking为代表的去中心化项目的本质和初心。此次，ETM首次与明星项目EOS及Cosmos 等一同被提及，体现了ETM在共识机制上的创新性和独特性，再次证明了ETM技术实力过硬，设计理论超前。",
+    "THERMO-DES01-PAR05":"5月31日，区块律动微信公众号深度原创文章《现在还有公平挖矿的机会吗？》（点击可查看原文）再次提及ETM。文章通过对比PoW、PoS机制，认为混合机制更具公平性，并对最近关注到的ETM进行详细分析，发现ETM从投票机制到矿工出块，再到抑制寡头垄断都体现了公平、安全、去中心化三者的兼容，“寡头垄断的效应在 ETM 上几乎会被消除，安全的随机算法贯穿整个生态，未被选中的矿工同样可以获得奖励，En-Tan-Mo 在每一步都保证了网络致力于打造的公平氛围。”",
+    "THERMO-DES01-PAR06":"6月2日，区块链知名自媒体链捕手关注到ETM后，对ETM做了深度剖析，文章《专访ETM团队：“四区”的正循环是公链崛起的必经之路 |链捕手》（点击可查看原文）通过专访形式对ETM整个项目、技术、生态、团队做了全方位的报道，让受众对ETM有了更深一步的了解。",
+    "THERMO-DES01-PAR07":"6月4日，ETM将于6月10日上线OK Jumpstart三期的消息一出，几十家区块链媒体自发发布相关快讯消息，《OK Jumpstart三期项目6月10日开启销售》的消息被区块链媒体刷屏；当日，由星球日报发布的《6天后开抢，一文看懂OK最新IEO项目En-Tan-Mo》（点击可查看原文）的新闻再次被币圈多家媒体转发，引发一波追捧ETM热潮。",
+    "THERMO-DES01-PAR08":"短短两周时间，ETM被深度曝光5次，相关文章被转载上百次，转发上千次，阅读超过10万人次，覆盖了币圈主流人群。ETM的UPoS共识机制、诺奖得主加持团队、去中心化理念等一经报道便引起强烈反响，大家对ETM作为真正的区块链技术驱动公链充满憧憬，ETM也将不负众望，砥砺前行，提供更好的技术和服务。",
+    
+    "YELLOWBOOK-TITLE":"En-Tan-Mo Officially Released The Project Yellow Paper",
+    "YELLOWBOOK-DES":"",
+    
+    "YELLOWBOOK-DES01-PAR00":"En-Tan-Mo (ETM), a bottom public chain released its project yellow paper officially on June 14.  Having been polished by the ETM Academy for six months, the yellow paper interprets the theoretical basis and technology of ETM from both science and technology aspects. And it combines them with the spirit of Satoshi Nakamoto.",
+    "YELLOWBOOK-DES01-PAR01":"The Scientific Interpretation part is subjected as Information, Entropy and Equilibrium: a mathematical physics perspective of blockchain. This dissertation is divided into three chapters.  It demonstrates the essential role played by theories of entropy, equilibrium, optimization, and mean field in our blockchain system. ",
+    "YELLOWBOOK-DES01-PAR02":"While the Technical Interpretation part focuses on the multi-angle technical architecture of DApp development, UPoS consensus mechanism, voting, optimization and dividend mechanism. Thus it explains the technical design of ETM and the specific implementation path. ",
+    "YELLOWBOOK-DES01-PAR03":"",
+    "YELLOWBOOK-DES01-PAR04":"",
+    "YELLOWBOOK-DES01-PAR05":"",
+    "YELLOWBOOK-DES01-PAR06":"",
+    "YELLOWBOOK-DES01-PAR07":"",
+    "YELLOWBOOK-DES01-PAR08":"",
+    "YELLOWBOOK-DES01-PAR09":"",
+    "YELLOWBOOK-DES01-PAR10":""
+    
 }
