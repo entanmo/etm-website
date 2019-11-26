@@ -15,6 +15,16 @@ class actLists extends React.Component{
                 <section className="etm-act swiper-container index_tab_con" ref={self => this.swiperID = self}>
                   <ul className="swiper-wrapper">
                     <li className="swiper-slide">
+                        <Link to='/articleList/article/page30'>
+                          <img className='slide-img'  src={((lang)=>{return require('./image/act05_'+lang+'.jpg')})(global.lang_change)}  alt=""/>                                                                           
+                        </Link>
+                    </li>
+                    <li className="swiper-slide">
+                        <a target="_blank" href='http://www.timetower.org/'>
+                          <img className='slide-img'  src={((lang)=>{return require('./image/act06_zh-CN.jpg')})(global.lang_change)}  alt=""/>                                                                           
+                        </a>
+                    </li>
+                    <li className="swiper-slide">
                         <Link to='/yellowbook'>
                           <img className='slide-img'  src={((lang)=>{return require('./image/act04_'+lang+'.png')})(global.lang_change)}  alt=""/>                                                                           
                         </Link>

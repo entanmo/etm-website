@@ -1,10 +1,17 @@
 export default {
-  'page27':{
-    id:'27',
-    path:'page27',
-    picName:'act27',
-    title:'En-Tan-Mo 开启“锁仓15天，48%年化收益”持币激励活动',
-    time:'2019-07-24'
+  // 'page27':{
+  //   id:'27',
+  //   path:'page27',
+  //   picName:'act27',
+  //   title:'En-Tan-Mo 开启“锁仓15天，48%年化收益”持币激励活动',
+  //   time:'2019-07-24'
+  // },
+  'page30':{
+    id:'30',
+    path:'page30',
+    picName:'act30',
+    title:'En-Tan-Mo主网 11 月 27 日正式上线',
+    time:'2019-11-22'
   },
   'page26':{
     id:'26',
