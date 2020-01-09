@@ -37,7 +37,6 @@ const SUPPOER_LOCALES = [
 class Header extends React.Component {
     constructor(props, context) {
         super(props, context);
-
         this.state = {
             mediaQuery: false,
             collapse: true,
@@ -106,8 +105,8 @@ class Header extends React.Component {
                 collapseStyle = this.props.className + '-collapseShow';
             }
         }
-
-        // console.log(`selectedKeys: ${this.selectedKeys}`);
+		
+		 // console.log(`selectedKeys: ${this.selectedKeys}`);
         return (
             <div className={this.props.className}>
                 <div className='flex container'>
@@ -146,8 +145,13 @@ class Header extends React.Component {
                                     <Menu.Item key='ecosystem-5'>{intl.get('MILL_MALL')}</Menu.Item>
                                 </Menu.SubMenu>
                                 <Menu.Item key='moore'>{intl.get('MOORE_ECONOMICS')}</Menu.Item>
-                                <Menu.Item key='documents' >{intl.get('DOCUMENTS')}</Menu.Item>
-                                <Menu.Item key='news' >{intl.get('NEWS')}</Menu.Item>
+								<Menu.SubMenu title={intl.get('NEWS')}>
+								    <Menu.Item key='news-1'>{intl.get('UPCOMING_EVENTS')}</Menu.Item>
+								    <Menu.Item key='news-2'>{intl.get('CURRENT_EVENTS')}</Menu.Item>
+									<Menu.Item key='news-3'>{intl.get('ETM_SOUND')}</Menu.Item>
+								</Menu.SubMenu>
+								<Menu.Item key='wallet'>{intl.get('WALLET')}</Menu.Item>
+                                <Menu.Item key='documents'>{intl.get('DOCUMENTS')}</Menu.Item>
                                 <Menu.SubMenu className='lang-select' title={this.getViewLang()}>
                                     <Menu.Item key='lang-1'>{SUPPOER_LOCALES[0].name}</Menu.Item>
                                     <Menu.Item key='lang-2'>{SUPPOER_LOCALES[1].name}</Menu.Item>
@@ -165,6 +169,7 @@ class Header extends React.Component {
         );
     }
     getViewLang (){
+		console.log(global.select,'global.select头部')
         let n=0;
         for(let i=0;i<SUPPOER_LOCALES.length;i++){
             if(SUPPOER_LOCALES[i].value === global.select){
@@ -212,6 +217,7 @@ class Header extends React.Component {
         // console.log('current: ', this.selectedKeys);
     }
     onMenuItemClick(event) {
+		var that = this
         console.log(this.props)
         switch (event.key) {
             case 'knownledge-1': {
@@ -267,18 +273,29 @@ class Header extends React.Component {
                 this.props.history.pushState(null, 'moore');
                 break;
             }
-            case 'news' : {
+            case 'news-1' : {
               this.props.history.pushState(null, 'articleList');
               break;
             }
-            case 'timeTower' : {
-              this.props.history.pushState(null, 'timeTower');
+			case 'news-2' : {
+			  this.props.history.pushState(null, 'articleListTwo');
+			  break;
+			}
+			case 'news-3' : {
+			  this.props.history.pushState(null, 'articleListThree');
+			  break;
+			}
+			case 'timeTower' : {
+			  this.props.history.pushState(null, 'timeTower');
+			  break;
+			}
+            case 'wallet' : {
+			  window.open('https://wallet.entanmo.com')
               break;
             }
             case 'documents': {
                 var pdfTemp =  ((lang)=>{return '../../docs/ETM Science_'+lang+'.pdf'})(global.select);
                 window.open(pdfTemp);
-                document.getElementsByClassName("ant-menu-item").r
                 break;
             }
             case 'lang-1': {

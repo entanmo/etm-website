@@ -4,6 +4,8 @@ import { Breadcrumb } from 'antd';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import list from '../../markdown/js/list';
+import listTwo from '../../markdown/js/listTwo';
+import listThree from '../../markdown/js/listThree';
 import './style/index.less'
   class Article extends React.Component{
     constructor(props){
@@ -22,6 +24,12 @@ import './style/index.less'
       for(const [title,detail] of Object.entries(list)){
         arr.push(title)
       }
+			for(const [title,detail] of Object.entries(listTwo)){
+			  arr.push(title)
+			}
+			for(const [title,detail] of Object.entries(listThree)){
+			  arr.push(title)
+			}
       if(url.match(reg) && arr.indexOf(path) !== -1){
         this.state.path = path
       } else {
@@ -60,8 +68,7 @@ import './style/index.less'
             <div className="breadcrumb">
               <Breadcrumb>
                 <Breadcrumb.Item>
-                <Link style={{ color:'#666'}} to={`articleList`}>文章列表</Link></Breadcrumb.Item>
-                <Breadcrumb.Item style={{ color:'#666'}} href="javascript:;">{this.state.path}</Breadcrumb.Item>
+                <Link style={{ color:'#666'}} to={`articleList`}>文章列表 ></Link></Breadcrumb.Item>
             </Breadcrumb>
             </div>
             {

@@ -1,3 +1,5 @@
+.header .ant-menu-item, .ant-menu-submenu-title{padding: 0 13px;}
+
 .header {
   width: 100%;
   min-height: 60px;
@@ -74,7 +76,7 @@
 }
 @media screen and (min-width: 992px) {
   .header > .container {
-    padding: 0 88px;
+    padding: 0 80px;
   }
   .header-toggle {
     display: none;
@@ -86,6 +88,6 @@
 }
 @media screen and (min-width: 1080px) {
   .header > .container {
-    padding: 0 144px;
+    padding: 0 80px;
   }
 }
